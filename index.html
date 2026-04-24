@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>ZTEK</title>
+</head>
+
+<body>
+    <div class="grid min-h-screen grid-rows-[auto_1fr_auto] bg-linear-to-b from-font to-font-50">
+        <header id="header" class="bg-transparent fixed top-0 z-50 w-full">
+            <div class="flex items-center justify-between px-10 h-20 relative">
+
+                <a href="#" class="flex items-center">
+                    <img class="h-15 md:h-20 w-auto hover:scale-105 transition-transform duration-300 py-2"
+                        src="assets/imagenes/logo_negro.svg" alt="Logo" />
+                </a>
+
+                <button id="menu-btn" class="md:hidden p-2 focus:outline-none" aria-label="Toggle menu">
+                    <svg id="icon-hamburger" class="w-8 h-8 transition-all duration-300" fill="none"
+                        stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+
+                    <svg id="icon-close" class="w-8 h-8 hidden transition-all duration-300" fill="none"
+                        stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8 items-center text-xl font-titulo font-bold">
+                        <li><a href="#" class="hover:text-font-300 transition-colors">item1</a></li>
+                        <li><a href="#" class="hover:text-font-300 transition-colors">item2</a></li>
+                        <li><a href="#" class="hover:text-font-300 transition-colors">item3</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <nav id="mobile-menu"
+                class="hidden md:hidden bg-font/90 w-full absolute left-0 top-20 border-t border-gray-200 shadow-xl">
+                <ul class="flex flex-col items-center gap-6 py-8 text-xl font-titulo font-bold">
+                    <li><a href="#" class="block w-full text-center hover:text-font-300">item1</a></li>
+                    <li><a href="#" class="block w-full text-center hover:text-font-300">item2</a></li>
+                    <li><a href="#" class="block w-full text-center hover:text-font-300">item3</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="home-page-slot-1" class="relative">
+                <img class="hidden md:block w-full h-auto" src="assets/imagenes/home/BANNER-B1-PRINCIPAL.png" alt="">
+                <img class="md:hidden w-full h-auto" src="assets/imagenes/home/BANNER-B1-PRINCIPAL-mobile.png" alt="">
+                <div class="absolute inset-0 flex items-center justify-center" data-aos="zoom-in">
+                    <p
+                        class="text-white text-3xl md:text-4xl font-titulo font-bold drop-shadow-lg bg-black/50 p-3 tracking-widest">
+                        ZTEK <span> MOTION</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center py-2" id="home-page-slot-2">
+                <h2 class="py-2">
+                    <img class="h-15" src="assets/imagenes/logo_negro.svg" alt="" class="mx-auto">
+                </h2>
+                <p class="font-parrafos text-center p-2 max-w-xl text-balance text-sm md:text-xl" data-aos="zoom-in">
+                    Somos apasionados por el estilo y el deporte, sabemos
+                    que para mantener un estilo impecable, necesitas productos de
+                    alta calidad esenciales para el cuidado y protección de cada una
+                    de tus prendas, es por eso que trabajamos con los mejores
+                    materiales e ingredientes, para ofrecer productos de limpieza y
+                    cuidado que no solo sean efectivos, sino tambien seguros para ti.
+                </p>
+
+            </div>
+
+            <div class="py-2" id="home-page-slot-3">
+                <div class="flex flex-col md:flex-row">
+                    <div class="pb-2 md:pb-0" data-aos="fade-right">
+                        <a href="#">
+                            <img class="hidden md:flex" src="assets/imagenes/home/BANNER-B2-HOMBRE.jpg" alt="">
+                            <img class="md:hidden" src="assets/imagenes/home/BANNER-B2-HOMBRE-mobile.jpg" alt="">
+                        </a>
+                    </div>
+                    <div data-aos="fade-left">
+                        <a href="#">
+                            <img class="hidden md:flex" src="assets/imagenes/home/BANNER-B2-MUJER.jpg" alt="">
+                            <img class="md:hidden" src="assets/imagenes/home/BANNER-B2-MUJER-mobile.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="home-page-slot-4" class="w-full p-4 h-80 md:h-180">
+                <div class="grid gap-2 grid-cols-2 md:grid-cols-3 grid-rows-2 h-full">
+                    <div class="row-span-2">
+                        <img class="w-full h-full object-cover object-right rounded-lg"
+                            src="assets/imagenes/home/carrusel/carrusel_01_1.gif" alt="">
+                    </div>
+                    <div class="hidden md:block col-start-2 row-start-1" data-aos="flip-right">
+                        <img class="w-full h-full object-cover object-left rounded-lg"
+                            src="assets/imagenes/home/carrusel/carrusel_01_1.jpg" alt="">
+                    </div>
+                    <div class="hidden md:block col-start-2 row-start-2" data-aos="flip-left">
+                        <img class="w-full h-full object-cover object-left rounded-lg"
+                            src="assets/imagenes/home/carrusel/carrusel_01_3.jpg" alt="">
+                    </div>
+                    <div class="col-start-2 md:col-start-3 row-span-2">
+                        <img class="h-full w-full object-cover hidden md:block"
+                            src="assets/imagenes/home/carrusel/BANNER-B4-IMAGEN-2.jpg" alt="">
+                        <img class="h-full w-full object-cover md:hidden block"
+                            src="assets/imagenes/home/carrusel/BANNER-B4-IMAGEN-2-mobile.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div id="home-page-slot-5">
+                <div class="flex flex-wrap overflow-hidden w-full gap-2">
+                    <div class="flex-auto w-[calc(50%-4px)] md:flex-1">
+                        <img class="w-full h-auto object-cover"
+                            src="assets/imagenes/home/evergreen/BANNER-B3-JACKET.jpg" alt="Jacket">
+                    </div>
+
+                    <div class="flex-auto w-[calc(50%-4px)] md:flex-1">
+                        <img class="w-full h-auto object-cover" src="assets/imagenes/home/evergreen/BANNER-B3-SHORT.jpg"
+                            alt="Short">
+                    </div>
+
+                    <div class="flex-auto w-[calc(50%-4px)] md:flex-1">
+                        <img class="w-full h-auto object-cover"
+                            src="assets/imagenes/home/evergreen/BANNER-B3-SPORT-BRA.jpg" alt="Sport Bra">
+                    </div>
+
+                    <div class="flex-auto w-[calc(50%-4px)] md:flex-1">
+                        <img class="w-full h-auto object-cover"
+                            src="assets/imagenes/home/evergreen/BANNER-B3-T-SHIRTS.jpg" alt="T-Shirts">
+                    </div>
+                </div>
+            </div>
+
+            <div id="home-page-slot-6" class="w-full p-4 h-80 md:h-180">
+                <div class="grid gap-2 grid-cols-2 md:grid-cols-3 grid-rows-2 h-full">
+                    <div class="row-span-2">
+                        <img class="w-full h-full object-cover object-right rounded-lg hidden md:block"
+                            src="assets/imagenes/home/carrusel/BANNER-B4-IMAGEN-1.jpg" alt="">
+                        <img class="w-full h-full object-cover object-right rounded-lg md:hidden block"
+                            src="assets/imagenes/home/carrusel/BANNER-B4-IMAGEN-1-mobile.jpg" alt="">
+                    </div>
+                    <div class="hidden md:block col-start-2 row-start-1" data-aos="flip-right">
+                        <img class="w-full h-full object-cover object-left rounded-lg"
+                            src="assets/imagenes/home/carrusel/carrusel_02_1.jpg" alt="">
+                    </div>
+                    <div class="hidden md:block col-start-2 row-start-2" data-aos="flip-left">
+                        <img class="w-full h-full object-cover object-left rounded-lg"
+                            src="assets/imagenes/home/carrusel/carrusel_02_2.jpg" alt="">
+                    </div>
+                    <div class="col-start-2 md:col-start-3 row-span-2">
+                        <img class="h-full w-full object-cover" src="assets/imagenes/home/carrusel/previ.gif" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="px-4">
+            footer
+        </footer>
+    </div>
+
+    <!-- AOS init -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+
+@import "tailwindcss";
+
+
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('/assets/fonts/RobotoMono.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/assets/fonts/Inter.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+}
+
+@theme {
+    /*Colores*/
+    --color-font: #EEEEEE;
+    --color-font-50: #cdd0d5;
+    --color-font-100: #a8b3bc;
+    --color-font-200: #82999f;
+    --color-font-300: #5f7f7e;
+    --color-font-400: #43655a;
+
+    /*Fondo SVG header*/
+    --background-image-wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%234D4436' fill-opacity='0.2' d='M0,288L60,282.7C120,277,240,267,360,240C480,213,600,171,720,165.3C840,160,960,192,1080,192C1200,192,1320,160,1380,144L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+
+    /*Fuentes*/
+    --font-titulo: 'RobotoMono', system-ui, sans-serif;
+    --font-parrafos: 'Inter', system-ui, sans-serif;
+}
