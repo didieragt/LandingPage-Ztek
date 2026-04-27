@@ -11,16 +11,14 @@
     <title>ZTEK</title>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <div class="grid min-h-screen grid-rows-[auto_1fr_auto] bg-linear-to-b from-font to-font-200">
         <header id="header" class="bg-transparent fixed top-0 z-50 w-full">
-            <div class="flex items-center justify-between px-10 h-20 relative">
-
+            <div class="flex items-center justify-between md:px-10 h-20">
                 <a href="#" class="flex items-center">
                     <img class="h-15 md:h-20 w-auto hover:scale-105 transition-transform duration-300 py-2"
                         src="assets/imagenes/logo_negro.svg" alt="Logo" />
                 </a>
-
                 <button id="menu-btn" class="md:hidden p-2 focus:outline-none" aria-label="Toggle menu">
                     <svg id="icon-hamburger" class="w-8 h-8 transition-all duration-300" fill="none"
                         stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -219,6 +217,15 @@
                 identificación tributaria (NIT): 900.158.685-9
             </div>
         </footer>
+    </div>
+
+    <div class="fixed bottom-10 right-8 z-50">
+        <a href="https://wa.me/000000000" target="_blank"
+            class="flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-[#25D366] rounded-full shadow-lg hover:scale-110 transition-transform duration-300 ease-in-out">
+            <svg class="w-8 h-8 md:w-10 md:h-10 fill-white">
+                <use href="assets/sprite.svg#whatsapp" />
+            </svg>
+        </a>
     </div>
 
     <!-- AOS init -->
