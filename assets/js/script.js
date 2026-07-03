@@ -7,24 +7,12 @@ const header = document.getElementById('header');
 let isScrolling = false;
 
 
-menuBtn.addEventListener('click', () => {
-
-    mobileMenu.classList.toggle('hidden');
-
-    iconHamburger.classList.toggle('hidden');
-    iconClose.classList.toggle('hidden');
-
-    const isExpanded = mobileMenu.classList.contains('hidden') ? 'false' : 'true';
-    menuBtn.setAttribute('aria-expanded', isExpanded);
-
-});
-
 window.addEventListener('scroll', () => {
     if (!isScrolling) {
         window.requestAnimationFrame(() => {
             const isPastThreshold = window.scrollY > 20;
 
-            header.classList.toggle('bg-font-50/80', isPastThreshold);
+            header.classList.toggle('bg-font-200/60', isPastThreshold);
             header.classList.toggle('transition-transform', isPastThreshold);
             header.classList.toggle('duration-500', isPastThreshold);
             header.classList.toggle('bg-transparent', !isPastThreshold);

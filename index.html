@@ -12,158 +12,212 @@
 </head>
 
 <body class="overflow-x-hidden">
-    <div class="grid min-h-screen grid-rows-[auto_1fr_auto] bg-linear-to-b from-font to-font-200">
+    <div class="grid min-h-screen grid-rows-[auto_1fr_auto] bg-linear-to-b bg-font">
         <header id="header" class="bg-transparent fixed top-0 z-50 w-full">
-            <div class="flex items-center justify-between md:px-10 h-20">
+            <div class="md:h-22 h-15">
                 <a href="#">
-                    <img class="h-15 md:h-20 w-auto hover:scale-105 transition-transform duration-300 py-2"
-                        src="assets/imagenes/logo_negro.svg" alt="Logo" />
+                    <img class="h-13 m-2 md:h-18 w-auto hover:scale-105 transition-transform duration-300"
+                        src="assets/imagenes/logos/LOGO ZTEK.svg" alt="Logo" />
                 </a>
-                <button id="menu-btn" class="md:hidden p-2 focus:outline-none" aria-label="Toggle menu">
-                    <svg id="icon-hamburger" class="w-8 h-8 transition-all duration-300" fill="none"
-                        stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-
-                    <svg id="icon-close" class="w-8 h-8 hidden transition-all duration-300" fill="none"
-                        stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-
-                <nav class="hidden md:block">
-                    <ul class="flex space-x-8 items-center text-xl font-titulo font-bold">
-                        <li><a href="#" class="hover:text-font-300 transition-colors">item1</a></li>
-                        <li><a href="#" class="hover:text-font-300 transition-colors">item2</a></li>
-                        <li><a href="#" class="hover:text-font-300 transition-colors">item3</a></li>
-                    </ul>
-                </nav>
             </div>
-
-            <nav id="mobile-menu"
-                class="hidden md:hidden bg-font/90 w-full absolute left-0 top-20 border-t border-gray-200 shadow-xl">
-                <ul class="flex flex-col items-center gap-6 py-8 text-xl font-titulo font-bold">
-                    <li><a href="#" class="block w-full text-center hover:text-font-300">item1</a></li>
-                    <li><a href="#" class="block w-full text-center hover:text-font-300">item2</a></li>
-                    <li><a href="#" class="block w-full text-center hover:text-font-300">item3</a></li>
-                </ul>
-            </nav>
         </header>
         <main>
             <div id="home-page-slot-1" class="relative">
-                <img class="hidden md:block w-full h-auto" src="assets/imagenes/home/BANNER-B1-PRINCIPAL.png" alt="">
-                <img class="md:hidden w-full h-auto" src="assets/imagenes/home/BANNER-B1-PRINCIPAL-mobile.png" alt="">
-                <div class="absolute inset-0 flex items-center justify-center" data-aos="zoom-in">
-                    <p
-                        class="text-white text-3xl md:text-4xl font-titulo font-bold drop-shadow-lg bg-black/50 p-3 tracking-widest">
-                        ZTEK <span> MOTION</span>
-                    </p>
+                <img class="hidden md:block w-full h-auto" src="assets/imagenes/home/desk/01-BANNER-PRINCIPAL.png"
+                    alt="">
+                <img class="md:hidden w-full h-auto" src="assets/imagenes/home/mobile/01-BANNER-PRINCIPAL.png" alt="">
+            </div>
+
+            <div id="home-page-slot-2" class="flex flex-col items-center">
+                <img class="hidden md:block w-full h-auto" src="assets/imagenes/home/desk/02-GIF-CINTILLO-DESK.gif"
+                    alt="">
+                <img class="md:hidden w-full h-auto" src="assets/imagenes/home/mobile/02-GIF-CINTILLO-MOB.gif" alt="">
+            </div>
+
+            <div id="home-page-slot-3" class="py-2 bg-black text-white">
+                <div class="h-full max-w-6xl mx-auto">
+                    <h2 class="md:hidden text-xl py-3 text-center tracking-widest font-titulo font-semibold uppercase">
+                        tu
+                        ritmo,
+                        tu
+                        estilo
+                    </h2>
+                    <div class="flex justify-center items-center px-5 md:py-5">
+                        <img class="w-full h-full md:h-35 p-2 object-fill" src="assets/imagenes/logos/LOGO ZTEK.svg"
+                            alt="Logo" />
+                        </br>
+                        <div class="tracking-widest text-[.7rem] md:text-base p-5">
+                            <h2 class="hidden md:block text-3xl tracking-[.3em] font-titulo font-semibold uppercase">tu
+                                ritmo,
+                                tu
+                                estilo
+                            </h2>
+                            <p class="font-parrafos md:py-5 md:pr-8">
+                                Creada por y para apasionados del deporte.
+                                Ztek te ofrece el equilibrio perfecto entre rendimiento
+                                técnico y estilo urbano.
+                                Desde tu entrenamiento más exigente hasta tu rutina diaria.
+                                <span class="md:hidden">Vístete con libertad, comodidad y diseño.</span>
+                                <span class="hidden md:block mt-2">Vístete con libertad, comodidad y diseño.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <hr class="mx-5">
+                    <div class="flex justify-evenly px-5 py-4 gap-5 md:py-10 md:px-28 md:gap-20">
+                        <button
+                            class="bg-white text-black font-bold text-xs md:text-sm uppercase py-1 md:py-3 w-full hover:bg-gray-200 transition-colors duration-300">accesorios</button>
+                        <button
+                            class="bg-white text-black font-bold text-xs md:text-sm uppercase py-1 md:py-3 w-full hover:bg-gray-200 transition-colors duration-300">ropa</button>
+                        <button
+                            class="bg-white text-black font-bold text-xs md:text-sm uppercase py-1 md:py-3 w-full hover:bg-gray-200 transition-colors duration-300">shore
+                            care</button>
+                    </div>
                 </div>
             </div>
 
-            <div class="flex flex-col items-center py-2" id="home-page-slot-2">
-                <h2 class="py-2">
-                    <img class="h-15" src="assets/imagenes/logo_negro.svg" alt="" class="mx-auto">
-                </h2>
-                <p class="font-parrafos text-center p-2 max-w-xl text-balance text-sm md:text-xl" data-aos="zoom-in">
-                    Somos apasionados por el estilo y el deporte, sabemos
-                    que para mantener un estilo impecable, necesitas productos de
-                    alta calidad esenciales para el cuidado y protección de cada una
-                    de tus prendas, es por eso que trabajamos con los mejores
-                    materiales e ingredientes, para ofrecer productos de limpieza y
-                    cuidado que no solo sean efectivos, sino tambien seguros para ti.
-                </p>
-
-            </div>
-
-            <div class="py-2" id="home-page-slot-3">
-                <div class="flex flex-col md:flex-row">
-                    <div class="pb-2 md:pb-0" data-aos="zoom-in">
-                        <a href="#">
-                            <img class="hidden md:flex" src="assets/imagenes/home/BANNER-B2-HOMBRE.jpg" alt="">
-                            <img class="md:hidden" src="assets/imagenes/home/BANNER-B2-HOMBRE-mobile.jpg" alt="">
-                        </a>
+            <div id="home-page-slot-4"
+                class="w-full bg-[#EFEFF1] md:bg-[url(/assets/imagenes/home/desk/03-IMAGEN-FONDO-TECH.png)] md:bg-center md:bg-contain md:bg-no-repeat">
+                <div class="grid grid-cols-3 grid-rows-2 md:grid-rows-3 gap-5 p-5">
+                    <div class="place-self-center">
+                        <img class="w-full p-2 md:w-50" src="assets/imagenes/home/desk/ICONO-1.png" alt="">
+                        <div class="text-center py-2">
+                            <p class="uppercase font-bold font-titulo text-sm md:text-lg">Soft Touch</p>
+                            <p class="text-xs md:text-base">Tejidos ligeros</p>
+                        </div>
                     </div>
-                    <div data-aos="zoom-in">
-                        <a href="#">
-                            <img class="hidden md:flex" src="assets/imagenes/home/BANNER-B2-MUJER.jpg" alt="">
-                            <img class="md:hidden" src="assets/imagenes/home/BANNER-B2-MUJER-mobile.jpg" alt="">
-                        </a>
+                    <div class="hidden md:block row-span-3">
+
+                    </div>
+                    <div class="place-self-center">
+                        <img class="w-full p-2 md:w-50" src="assets/imagenes/home/desk/ICONO-2.png" alt="">
+                        <div class="text-center py-2">
+                            <p class="uppercase font-bold font-titulo text-sm md:text-lg">Durabilidad</p>
+                            <p class="text-xs md:text-base">Tejidos duraderos</p>
+                        </div>
+                    </div>
+                    <div class="place-self-center">
+                        <img class="w-full p-2 md:w-50" src="assets/imagenes/home/desk/ICONO-6.png" alt="">
+                        <div class="text-center py-2">
+                            <p class="uppercase font-bold font-titulo text-sm md:text-lg">Elasticidad</p>
+                            <p class="text-xs md:text-base">Multidireccional</p>
+                        </div>
+                    </div>
+                    <div class="place-self-center">
+                        <img class="w-full p-2 md:w-50" src="assets/imagenes/home/desk/ICONO-5.png" alt="">
+                        <div class="text-center py-2">
+                            <p class="uppercase font-bold font-titulo text-sm md:text-lg">Multideporte</p>
+                            <p class="text-xs md:text-base">Prendas versátiles</p>
+                        </div>
+                    </div>
+                    <div class="place-self-center">
+                        <img class="w-full p-2 md:w-50" src="assets/imagenes/home/desk/ICONO-4.png" alt="">
+                        <div class="text-center py-2">
+                            <p class="uppercase font-bold font-titulo text-sm md:text-lg">Quick Dry</p>
+                            <p class="text-xs md:text-base">Tejidos transpirables</p>
+                        </div>
+                    </div>
+                    <div class="place-self-center">
+                        <img class="w-full p-2 md:w-50" src="assets/imagenes/home/desk/ICONO-3.png" alt="">
+                        <div class="text-center py-2">
+                            <p class="uppercase font-bold font-titulo text-sm md:text-lg">All Day</p>
+                            <p class="text-xs md:text-base">Multifuncionales</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div id="home-page-slot-4" class="w-full p-4 h-80 md:h-180">
-                <div class="grid gap-2 grid-cols-2 md:grid-cols-3 grid-rows-2 h-full">
-                    <div class="row-span-2">
-                        <img class="w-full h-full object-cover object-right rounded-lg"
-                            src="assets/imagenes/home/carrusel/carrusel_01_1.gif" alt="">
-                    </div>
-                    <div class="hidden md:block col-start-2 row-start-1" data-aos="flip-right">
-                        <img class="w-full h-full object-cover object-left rounded-lg"
-                            src="assets/imagenes/home/carrusel/carrusel_01_1.jpg" alt="">
-                    </div>
-                    <div class="hidden md:block col-start-2 row-start-2" data-aos="flip-left">
-                        <img class="w-full h-full object-cover object-left rounded-lg"
-                            src="assets/imagenes/home/carrusel/carrusel_01_3.jpg" alt="">
-                    </div>
-                    <div class="col-start-2 md:col-start-3 row-span-2">
-                        <img class="h-full w-full object-cover hidden md:block"
-                            src="assets/imagenes/home/carrusel/BANNER-B4-IMAGEN-2.jpg" alt="">
-                        <img class="h-full w-full object-cover md:hidden block"
-                            src="assets/imagenes/home/carrusel/BANNER-B4-IMAGEN-2-mobile.jpg" alt="">
-                    </div>
-                </div>
+            <div>
+                <p
+                    class="uppercase text-sm md:text-lg font-titulo text-center p-3 bg-white tracking-[.5em] font-semibold">
+                    DISEÑO
+                    QUE TE
+                    MUEVE</p>
             </div>
 
             <div id="home-page-slot-5">
-                <div class="flex flex-wrap overflow-hidden w-full gap-2">
-                    <div class="flex-auto w-[calc(50%-4px)] md:flex-1">
-                        <img class="w-full h-auto object-cover"
-                            src="assets/imagenes/home/evergreen/BANNER-B3-JACKET.jpg" alt="Jacket">
+                <div class="grid grid-cols-2 grid-rows-4 gap-2 p-5 md:mx-5 md:px-20">
+                    <div class="">
+                        <img data-aos="slide-left" class="w-full h-full"
+                            src="assets/imagenes/home/mobile/04-CARACTERÍSTICA-1-MOB.gif" alt="">
                     </div>
-
-                    <div class="flex-auto w-[calc(50%-4px)] md:flex-1">
-                        <img class="w-full h-auto object-cover" src="assets/imagenes/home/evergreen/BANNER-B3-SHORT.jpg"
-                            alt="Short">
+                    <div class="flex items-center">
+                        <p
+                            class="uppercase text-left font-semibold text-xs md:text-lg px-4 tracking-[.3em] md:tracking-[.5em]">
+                            detalles
+                            <br>
+                            reflectivos
+                        </p>
                     </div>
-
-                    <div class="flex-auto w-[calc(50%-4px)] md:flex-1">
-                        <img class="w-full h-auto object-cover"
-                            src="assets/imagenes/home/evergreen/BANNER-B3-SPORT-BRA.jpg" alt="Sport Bra">
+                    <div class="flex items-center">
+                        <p
+                            class="uppercase text-right font-semibold text-xs md:text-lg px-4 tracking-[.2em] md:tracking-[.5em]">
+                            bolsillos y cierres
+                            funcionales</p>
                     </div>
-
-                    <div class="flex-auto w-[calc(50%-4px)] md:flex-1">
-                        <img class="w-full h-auto object-cover"
-                            src="assets/imagenes/home/evergreen/BANNER-B3-T-SHIRTS.jpg" alt="T-Shirts">
+                    <div>
+                        <img data-aos="slide-right" class="w-full h-full"
+                            src="assets/imagenes/home/mobile/04-CARACTERÍSTICA-2-MOB.gif" alt="">
                     </div>
+                    <div>
+                        <img data-aos="slide-left" class="w-full h-full"
+                            src="assets/imagenes/home/mobile/04-CARACTERÍSTICA-3-MOB.gif" alt="">
+                    </div>
+                    <div class="flex items-center">
+                        <p
+                            class="uppercase text-left font-semibold text-xs md:text-lg px-4 tracking-[.2em] md:tracking-[.5em]">
+                            slider con <br> grabado
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-end">
+                        <p
+                            class="uppercase text-right font-semibold text-xs md:text-lg px-4 tracking-[.2em] md:tracking-[.5em]">
+                            punteras <br> contramarcadas</p>
+                    </div>
+                    <div>
+                        <img data-aos="slide-right" class="w-full h-full"
+                            src="assets/imagenes/home/mobile/04-CARACTERÍSTICA-4-MOB.png" alt="">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button
+                        class="uppercase bg-black text-white font-titulo font-bold p-2 px-5 text-sm md:text-lg my-5">explora
+                        la
+                        línea de
+                        ropa</button>
                 </div>
             </div>
 
-            <div id="home-page-slot-6" class="w-full p-4 h-80 md:h-180">
-                <div class="grid gap-2 grid-cols-2 md:grid-cols-3 grid-rows-2 h-full">
-                    <div class="row-span-2">
-                        <img class="w-full h-full object-cover object-right rounded-lg hidden md:block"
-                            src="assets/imagenes/home/carrusel/BANNER-B4-IMAGEN-1.jpg" alt="">
-                        <img class="w-full h-full object-cover object-right rounded-lg md:hidden block"
-                            src="assets/imagenes/home/carrusel/BANNER-B4-IMAGEN-1-mobile.jpg" alt="">
-                    </div>
-                    <div class="hidden md:block col-start-2 row-start-1" data-aos="flip-right">
-                        <img class="w-full h-full object-cover object-left rounded-lg"
-                            src="assets/imagenes/home/carrusel/carrusel_02_1.jpg" alt="">
-                    </div>
-                    <div class="hidden md:block col-start-2 row-start-2" data-aos="flip-left">
-                        <img class="w-full h-full object-cover object-left rounded-lg"
-                            src="assets/imagenes/home/carrusel/carrusel_02_2.jpg" alt="">
-                    </div>
-                    <div class="col-start-2 md:col-start-3 row-span-2">
-                        <img class="h-full w-full object-cover" src="assets/imagenes/home/carrusel/previ.gif" alt="">
-                    </div>
+            <div id="home-page-slot-6" class="bg-black">
+                <p
+                    class="uppercase text-center text-white p-5 font-titulo font-semibold text-sm md:text-xl md:tracking-[.5em] md:py-8">
+                    lo mejor de nuestra línea de shoe care
+                </p>
+
+                <div
+                    class="flex w-full gap-4 overflow-x-auto snap-x snap-mandatory px-4 pb-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+
+                    <img class="shrink-0 snap-center w-64 md:w-80 h-auto object-cover rounded-lg"
+                        src="assets/imagenes/home/desk/05-LIMPIEZA-1.png" alt="Limpieza 1">
+
+                    <img class="shrink-0 snap-center w-64 md:w-80 h-auto object-cover rounded-lg"
+                        src="assets/imagenes/home/desk/05-LIMPIEZA-2.png" alt="Limpieza 2">
+
+                    <img class="shrink-0 snap-center w-64 md:w-80 h-auto object-cover rounded-lg"
+                        src="assets/imagenes/home/desk/05-LIMPIEZA-3.png" alt="Limpieza 3">
+
+                    <img class="shrink-0 snap-center w-64 md:w-80 h-auto object-cover rounded-lg"
+                        src="assets/imagenes/home/desk/05-LIMPIEZA-4.png" alt="Limpieza 4">
+
+                </div>
+                <div class="text-center">
+                    <button
+                        class="uppercase bg-white text-black font-titulo font-bold p-2 px-5 text-sm md:text-lg my-5">explora
+                        la línea de limpieza</button>
                 </div>
             </div>
 
         </main>
-        <footer class="px-6 py-8 bg-black/70 text-white">
+        <footer class="px-6 py-8 bg-black text-white">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="md:col-span-2 flex flex-col items-center justify-center gap-4">
                     <div>
@@ -171,22 +225,22 @@
                     </div>
                     <div class="flex gap-4">
                         <a href="#" class="hover:scale-105 hover:opacity-75 transition-opacity duration-300">
-                            <svg class="w-8 h-8 md:w-12 md:h-12 fill-white">
+                            <svg class="w-8 h-8 md:w-10 md:h-10 fill-white">
                                 <use href="assets/sprite.svg#tiktok" />
                             </svg>
                         </a>
                         <a href="#" class="hover:scale-105 hover:opacity-75 transition-opacity duration-300">
-                            <svg class="w-8 h-8 md:w-12 md:h-12 fill-white">
+                            <svg class="w-8 h-8 md:w-10 md:h-10 fill-white">
                                 <use href="assets/sprite.svg#insta" />
                             </svg>
                         </a>
                         <a href="#" class="hover:scale-105 hover:opacity-75 transition-opacity duration-300">
-                            <svg class="w-8 h-8 md:w-12 md:h-12 fill-white">
+                            <svg class="w-8 h-8 md:w-10 md:h-10 fill-white">
                                 <use href="assets/sprite.svg#face" />
                             </svg>
                         </a>
                         <a href="#" class="hover:scale-105 hover:opacity-75 transition-opacity duration-300">
-                            <svg class="w-8 h-8 md:w-12 md:h-12 fill-white">
+                            <svg class="w-8 h-8 md:w-10 md:h-10 fill-white">
                                 <use href="assets/sprite.svg#X" />
                             </svg>
                         </a>
@@ -217,15 +271,6 @@
                 identificación tributaria (NIT): 900.158.685-9
             </div>
         </footer>
-    </div>
-
-    <div class="fixed bottom-10 right-8 z-50">
-        <a href="https://wa.me/000000000" target="_blank"
-            class="flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-[#25D366] rounded-full shadow-lg hover:scale-110 transition-transform duration-300 ease-in-out">
-            <svg class="w-8 h-8 md:w-10 md:h-10 fill-white">
-                <use href="assets/sprite.svg#whatsapp" />
-            </svg>
-        </a>
     </div>
 
     <!-- AOS init -->
