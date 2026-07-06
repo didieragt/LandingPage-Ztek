@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="assets/imagenes/favicon.svg" type="image/x-icon">
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>ZTEK</title>
 </head>
 
@@ -79,7 +80,7 @@
             <div id="home-page-slot-4"
                 class="w-full bg-[#EFEFF1] md:bg-[url('/LandingPage-Ztek/03-IMAGEN-FONDO-TECH.png')] md:bg-center md:bg-contain md:bg-no-repeat">
                 <div class="grid grid-cols-3 grid-rows-2 md:grid-rows-3 gap-5 p-5">
-                    <div class="place-self-center">
+                    <div class="place-self-stretch md:place-self-center">
                         <img class="w-full p-2 md:w-50" src="assets/imagenes/home/desk/ICONO-1.png" alt="">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">Soft Touch</p>
@@ -89,35 +90,35 @@
                     <div class="hidden md:block row-span-3">
 
                     </div>
-                    <div class="place-self-center">
+                    <div class="place-self-stretch md:place-self-center">
                         <img class="w-full p-2 md:w-50" src="assets/imagenes/home/desk/ICONO-2.png" alt="">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">Durabilidad</p>
                             <p class="text-xs md:text-base">Tejidos duraderos</p>
                         </div>
                     </div>
-                    <div class="place-self-center">
+                    <div class="place-self-stretch md:place-self-center">
                         <img class="w-full p-2 md:w-50" src="assets/imagenes/home/desk/ICONO-6.png" alt="">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">Elasticidad</p>
                             <p class="text-xs md:text-base">Multidireccional</p>
                         </div>
                     </div>
-                    <div class="place-self-center">
+                    <div class="place-self-stretch md:place-self-center">
                         <img class="w-full p-2 md:w-50" src="assets/imagenes/home/desk/ICONO-5.png" alt="">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">Multideporte</p>
                             <p class="text-xs md:text-base">Prendas versátiles</p>
                         </div>
                     </div>
-                    <div class="place-self-center">
+                    <div class="place-self-stretch md:place-self-center">
                         <img class="w-full p-2 md:w-50" src="assets/imagenes/home/desk/ICONO-4.png" alt="">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">Quick Dry</p>
                             <p class="text-xs md:text-base">Tejidos transpirables</p>
                         </div>
                     </div>
-                    <div class="place-self-center">
+                    <div class="place-self-stretch md:place-self-center">
                         <img class="w-full p-2 md:w-50" src="assets/imagenes/home/desk/ICONO-3.png" alt="">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">All Day</p>
@@ -180,8 +181,59 @@
                 </div>
             </div>
 
+            <div id="home-page-slot-6" class="bg-black">
+                <p
+                    class="uppercase text-center text-white p-5 font-titulo font-semibold text-sm md:text-xl md:tracking-[.5em] md:py-8">
+                    lo mejor de nuestra línea de shoe care
+                </p>
 
+                <div id="carouselExampleSlidesOnly">
+                    <!--Carousel items-->
+                    <div class="flex gap-2 px-3">
+                        <!--First item-->
+                        <div class="">
+                            <img src="assets/imagenes/home/desk/05-LIMPIEZA-1.png" class="block w-full"
+                                alt="Wild Landscape" />
+                        </div>
+                        <!--Second item-->
+                        <div class="">
+                            <img src="assets/imagenes/home/desk/05-LIMPIEZA-2.png" class="block w-full" alt="Camera" />
+                        </div>
+                        <!--Third item-->
+                        <div class="">
+                            <img src="assets/imagenes/home/desk/05-LIMPIEZA-3.png" class="block w-full"
+                                alt="Exotic Fruits" />
+                        </div>
 
+                        <div class="">
+                            <img src="assets/imagenes/home/desk/05-LIMPIEZA-4.png" class="block w-full"
+                                alt="Exotic Fruits" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button
+                        class="uppercase bg-white text-black font-titulo font-bold p-2 px-5 text-sm md:text-lg my-5">explora
+                        la línea de limpieza</button>
+                </div>
+            </div>
+
+            <div id="home-page-slot-7" class="py-5">
+                <div class="relative">
+                    <img class="md:hidden w-full" src="assets/imagenes/home/mobile/06-BANNER-ACCESORIOS.png" alt="">
+                    <img class="hidden md:block w-full" src="assets/imagenes/home/desk/06-BANNER-ACCESORIOS.png" alt="">
+                    <p
+                        class="absolute uppercase text-xs md:text-3xl px-5 right-4 md:right-40 top-1/2 -translate-y-1/2 font-titulo text-black font-semibold md:tracking-[.5em]">
+                        Accesorios
+                    </p>
+                </div>
+                <div class="text-center bg-black">
+                    <button
+                        class="uppercase bg-white text-black font-titulo font-bold p-2 px-5 text-sm md:text-lg my-5">
+                        ver todo en accesorios</button>
+                </div>
+            </div>
 
         </main>
         <footer class="px-6 py-8 bg-black text-white">
@@ -242,6 +294,7 @@
 
     <!-- AOS init -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 

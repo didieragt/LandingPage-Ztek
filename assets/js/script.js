@@ -25,6 +25,9 @@ window.addEventListener('scroll', () => {
 });
 
 
+//Carrusel
+
+
 AOS.init({
     duration: 2000,
 })
