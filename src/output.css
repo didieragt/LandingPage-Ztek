@@ -597,6 +597,16 @@
       gap: calc(var(--spacing) * 20);
     }
   }
+  .md\:bg-\[url\(\'\/03-IMAGEN-FONDO-TECH\.png\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('/03-IMAGEN-FONDO-TECH.png');
+    }
+  }
+  .md\:bg-\[url\(\.\/03-IMAGEN-FONDO-TECH\.png\)\] {
+    @media (width >= 48rem) {
+      background-image: url(./03-IMAGEN-FONDO-TECH.png);
+    }
+  }
   .md\:bg-\[url\(\/03-IMAGEN-FONDO-TECH\.png\)\] {
     @media (width >= 48rem) {
       background-image: url(/03-IMAGEN-FONDO-TECH.png);
