@@ -27,6 +27,27 @@ window.addEventListener('scroll', () => {
 
 //Carrusel
 
+document.addEventListener("DOMContentLoaded", () => {
+    const carrusel = document.getElementById('carrusel');
+    carrusel.innerHTML += carrusel.innerHTML;
+
+    let posicion = 0;
+    const velocidad = 1;
+
+    function animar() {
+        posicion += velocidad;
+
+        if (posicion >= carrusel.scrollWidth / 2) {
+            posicion = 0;
+        }
+
+        carrusel.style.transform = `translateX(-${posicion}px)`;
+        requestAnimationFrame(animar);
+    }
+
+    animar();
+})
+
 
 AOS.init({
     duration: 2000,
