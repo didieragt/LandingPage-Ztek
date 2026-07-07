@@ -1152,6 +1152,11 @@
       background-image: url('LandingPage-Ztek/03-IMAGEN-FONDO-TECH.png');
     }
   }
+  .md\:bg-\[url\(\'https\:\/\/didieragt\.github\.io\/LandingPage-Ztek\/03-IMAGEN-FONDO-TECH\.png\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('https://didieragt.github.io/LandingPage-Ztek/03-IMAGEN-FONDO-TECH.png');
+    }
+  }
   .md\:bg-\[url\(\.\/03-IMAGEN-FONDO-TECH\.png\)\] {
     @media (width >= 48rem) {
       background-image: url(./03-IMAGEN-FONDO-TECH.png);
