@@ -6,21 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/output.css">
     <link rel="shortcut icon" href="assets/imagenes/favicon.svg" type="image/x-icon">
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>ZTEK</title>
 </head>
 
 <body class="overflow-x-hidden">
-    <div class="grid min-h-screen grid-rows-[auto_1fr_auto] bg-linear-to-b bg-font">
-        <header id="header" class="bg-transparent fixed top-0 z-50 w-full">
-            <div class="md:h-22 h-15">
-                <a href="#">
-                    <img class="h-13 m-2 md:h-18 w-auto hover:scale-105 transition-transform duration-300"
-                        src="assets/imagenes/logos/LOGO ZTEK.svg" alt="Logo" />
-                </a>
-            </div>
+    <div class="grid min-h-screen grid-rows-[auto_1fr_auto] bg-white">
+        <header class="absolute z-50 w-full px-5 md:px-10 lg:px-15 pt-2 md:pt-5">
+            <img class="h-13 m-2 md:h-18 w-auto" src="assets/imagenes/logos/LOGO ZTEK.svg" alt="Logo" />
         </header>
         <main>
             <div id="home-page-slot-1" class="relative">
@@ -35,26 +28,28 @@
                 <img class="md:hidden w-full h-auto" src="assets/imagenes/home/mobile/02-GIF-CINTILLO-MOB.gif" alt="">
             </div>
 
-            <div id="home-page-slot-3" class="py-2 bg-black text-white">
-                <div class="h-full max-w-6xl mx-auto">
+            <div id="home-page-slot-3" class="py-2 bg-black text-white px-5 md:px-10 lg:px-15">
+                <div class="justify-items-center">
                     <h2 class="md:hidden text-xl py-3 text-center tracking-widest font-titulo font-semibold uppercase">
                         tu
                         ritmo,
                         tu
                         estilo
                     </h2>
-                    <div class="grid grid-cols-3 grid-rows-1 mx-5">
-                        <div class="flex items-center">
-                            <img class="w-full h-full md:h-35 p-2 object-fill" src="assets/imagenes/logos/LOGO ZTEK.svg"
+                    <div class="grid grid-cols-3 grid-rows-1 md:gap-5 md:p-10">
+                        <div class="flex md:ml-15 px-2">
+                            <img class="object-contain w-full h-auto" src="assets/imagenes/logos/LOGO ZTEK.svg"
                                 alt="Logo" />
                         </div>
-                        <div class="tracking-widest text-[.7rem] md:text-base p-5 col-span-2">
-                            <h2 class="hidden md:block text-3xl tracking-[.3em] font-titulo font-semibold uppercase">tu
+                        <div class="tracking-widest text-[.7rem] md:text-base md:ml-15 col-span-2">
+                            <h2
+                                class="hidden py-3 md:block text-3xl tracking-[.3em] font-titulo font-semibold uppercase">
+                                tu
                                 ritmo,
                                 tu
                                 estilo
                             </h2>
-                            <p class="font-parrafos md:py-5 md:pr-8">
+                            <p class="font-parrafos py-5 md:py-0 pl-8 md:pl-0 md:pr-8 text-xs md:text-lg lg:text-xl">
                                 Creada por y para apasionados del deporte.
                                 Ztek te ofrece el equilibrio perfecto entre rendimiento
                                 técnico y estilo urbano.
@@ -64,24 +59,31 @@
                             </p>
                         </div>
                     </div>
-                    <hr class="mx-5">
-                    <div class="flex justify-evenly px-5 py-4 gap-5 md:py-10 md:px-28 md:gap-20">
+                    <hr class="w-full">
+                    <div class="flex gap-5 md:gap-20 w-full py-5 md:py-8 md:px-20 md:m-5">
                         <button
-                            class="bg-white text-black font-bold text-xs md:text-sm uppercase py-1 md:py-3 w-full hover:bg-gray-200 transition-colors duration-300">accesorios</button>
+                            class="flex-1 bg-white text-black text-center font-bold text-xs md:text-base lg:text-xl uppercase py-1 md:py-3 hover:bg-black hover:text-white border-2 border-white transition-colors duration-300">accesorios</button>
                         <button
-                            class="bg-white text-black font-bold text-xs md:text-sm uppercase py-1 md:py-3 w-full hover:bg-gray-200 transition-colors duration-300">ropa</button>
+                            class="flex-1 bg-white text-black text-center font-bold text-xs md:text-base lg:text-xl uppercase py-1 md:py-3 hover:bg-black hover:text-white border-2 border-white transition-colors duration-300">ropa</button>
                         <button
-                            class="bg-white text-black font-bold text-xs md:text-sm uppercase py-1 md:py-3 w-full hover:bg-gray-200 transition-colors duration-300">shore
+                            class="flex-1 bg-white text-black text-center font-bold text-xs md:text-base lg:text-xl uppercase py-1 md:py-3 hover:bg-black hover:text-white border-2 border-white transition-colors duration-300">shore
                             care</button>
                     </div>
                 </div>
             </div>
 
+            <div>
+                <h2
+                    class="p-5 md:p-15 text-center text-xs md:text-lg lg:text-3xl text-black tracking-[.2em] md:tracking-[.5em] font-titulo font-semibold uppercase">
+                    la tecnología de nuestras prendas
+                </h2>
+            </div>
+
             <div id="home-page-slot-4"
-                class="w-full bg-[#EFEFF1] md:bg-[url('https://didieragt.github.io/LandingPage-Ztek/03-IMAGEN-FONDO-TECH.png')] md:bg-center md:bg-contain md:bg-no-repeat">
-                <div class="grid grid-cols-3 grid-rows-2 md:grid-rows-3 gap-5 p-5">
+                class="w-full bg-[#EFEFF1] md:bg-[url('https://didieragt.github.io/LandingPage-Ztek/03-IMAGEN-FONDO-TECH.png')] md:bg-center md:bg-contain md:bg-no-repeat px-5 md:px-10 lg:px-15 py-10">
+                <div class="grid grid-cols-3 grid-rows-2 md:grid-rows-3 gap-5">
                     <div class="place-self-stretch md:place-self-center">
-                        <img class="w-full md:h-60 p-2" src="assets/imagenes/home/desk/ICONO-1.png" alt="">
+                        <img class="w-full md:h-50 p-2" src="assets/imagenes/home/desk/ICONO-1.png" alt="">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">Soft Touch</p>
                             <p class="text-xs md:text-base">Tejidos ligeros</p>
@@ -91,35 +93,35 @@
 
                     </div>
                     <div class="place-self-stretch md:place-self-center">
-                        <img class="w-full p-2 md:h-60" src="assets/imagenes/home/desk/ICONO-2.png" alt="">
+                        <img class="w-full p-2 md:h-50" src="assets/imagenes/home/desk/ICONO-2.png" alt="">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">Durabilidad</p>
                             <p class="text-xs md:text-base">Tejidos duraderos</p>
                         </div>
                     </div>
                     <div class="place-self-stretch md:place-self-center">
-                        <img class="w-full p-2 md:h-60" src="assets/imagenes/home/desk/ICONO-6.png" alt="">
+                        <img class="w-full p-2 md:h-50" src="assets/imagenes/home/desk/ICONO-6.png" alt="">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">Elasticidad</p>
                             <p class="text-xs md:text-base">Multidireccional</p>
                         </div>
                     </div>
                     <div class="place-self-stretch md:place-self-center">
-                        <img class="w-full p-2 md:h-60" src="assets/imagenes/home/desk/ICONO-5.png" alt="">
+                        <img class="w-full p-2 md:h-50" src="assets/imagenes/home/desk/ICONO-5.png" alt="">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">Multideporte</p>
                             <p class="text-xs md:text-base">Prendas versátiles</p>
                         </div>
                     </div>
                     <div class="place-self-stretch md:place-self-center">
-                        <img class="w-full p-2 md:h-60" src="assets/imagenes/home/desk/ICONO-4.png" alt="">
+                        <img class="w-full p-2 md:h-50" src="assets/imagenes/home/desk/ICONO-4.png" alt="">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">Quick Dry</p>
                             <p class="text-xs md:text-base">Tejidos transpirables</p>
                         </div>
                     </div>
                     <div class="place-self-stretch md:place-self-center">
-                        <img class="w-full p-2 md:h-60" src="assets/imagenes/home/desk/ICONO-3.png" alt="">
+                        <img class="w-full p-2 md:h-50" src="assets/imagenes/home/desk/ICONO-3.png" alt="">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">All Day</p>
                             <p class="text-xs md:text-base">Multifuncionales</p>
@@ -128,151 +130,121 @@
                 </div>
             </div>
 
+            <div>
+                <h2
+                    class="p-5 md:p-15 text-center text-xs md:text-lg lg:text-3xl text-black tracking-[.2em] md:tracking-[.5em] font-titulo font-semibold uppercase">
+                    detalles premium, diseño que te mueve
+                </h2>
+            </div>
+
             <div id="home-page-slot-5">
-                <div class="grid grid-cols-2 grid-rows-4 gap-2 p-5 md:mx-5 md:px-20">
+                <div class="grid grid-cols-2 gap-2 px-5 md:px-10 lg:px-15 auto-rows-min">
                     <div class="">
-                        <img data-aos="slide-left" class="w-full h-full"
-                            src="assets/imagenes/home/mobile/04-CARACTERÍSTICA-1-MOB.gif" alt="">
+                        <img class="w-3/4 h-auto" src="assets/imagenes/home/mobile/04-CARACTERÍSTICA-1-MOB.gif" alt="">
                     </div>
                     <div class="flex items-center">
                         <p
-                            class="uppercase text-left font-semibold text-xs md:text-lg px-4 tracking-[.3em] md:tracking-[.5em]">
+                            class="uppercase text-left font-semibold text-xs md:text-lg lg:text-2xl px-4 tracking-[.3em] md:tracking-[.5em]">
                             detalles
                             <br>
                             reflectivos
                         </p>
                     </div>
-                    <div class="flex items-center">
+                    <div class="flex items-center justify-end">
                         <p
-                            class="uppercase text-right font-semibold text-xs md:text-lg px-4 tracking-[.2em] md:tracking-[.5em]">
-                            bolsillos y cierres
+                            class="uppercase text-right font-semibold text-xs md:text-lg lg:text-2xl px-4 tracking-[.2em] md:tracking-[.5em]">
+                            bolsillos y cierres <br>
                             funcionales</p>
                     </div>
-                    <div>
-                        <img data-aos="slide-right" class="w-full h-full"
-                            src="assets/imagenes/home/mobile/04-CARACTERÍSTICA-2-MOB.gif" alt="">
+                    <div class="flex items-center justify-end">
+                        <img class="w-3/4 h-auto" src="assets/imagenes/home/mobile/04-CARACTERÍSTICA-2-MOB.gif" alt="">
                     </div>
                     <div>
-                        <img data-aos="slide-left" class="w-full h-full"
-                            src="assets/imagenes/home/mobile/04-CARACTERÍSTICA-3-MOB.gif" alt="">
+                        <img class="w-3/4 h-auto" src="assets/imagenes/home/mobile/04-CARACTERÍSTICA-3-MOB.gif" alt="">
                     </div>
                     <div class="flex items-center">
                         <p
-                            class="uppercase text-left font-semibold text-xs md:text-lg px-4 tracking-[.2em] md:tracking-[.5em]">
+                            class="uppercase text-left font-semibold text-xs md:text-lg lg:text-2xl px-4 tracking-[.2em] md:tracking-[.5em]">
                             slider con <br> grabado
                         </p>
                     </div>
                     <div class="flex items-center justify-end">
                         <p
-                            class="uppercase text-right font-semibold text-xs md:text-lg px-4 tracking-[.2em] md:tracking-[.5em]">
+                            class="uppercase text-right font-semibold text-xs md:text-lg lg:text-2xl px-4 tracking-[.2em] md:tracking-[.5em]">
                             punteras <br> contramarcadas</p>
                     </div>
-                    <div>
-                        <img data-aos="slide-right" class="w-full h-full"
-                            src="assets/imagenes/home/mobile/04-CARACTERÍSTICA-4-MOB.png" alt="">
+                    <div class="flex items-center justify-end pb-2">
+                        <img class="w-3/4 h-auto" src="assets/imagenes/home/mobile/04-CARACTERÍSTICA-4-MOB.png" alt="">
                     </div>
-                </div>
-                <div class="text-center">
-                    <button
-                        class="uppercase bg-black text-white font-titulo font-bold p-2 px-5 text-sm md:text-lg my-5">explora
-                        la
-                        línea de
-                        ropa</button>
                 </div>
             </div>
 
             <div id="home-page-slot-6" class="bg-black">
-                <p
-                    class="uppercase text-center text-white p-5 font-titulo font-semibold text-sm md:text-xl md:tracking-[.5em] md:py-8">
-                    lo mejor de nuestra línea de shoe care
-                </p>
-
-                <div class="" id="carouselExampleSlidesOnly">
-                    <!--Carousel items-->
-                    <div class="flex gap-2 px-3">
-                        <!--First item-->
-                        <div class="">
-                            <img src="assets/imagenes/home/desk/05-LIMPIEZA-1.png" class="block w-full"
-                                alt="Wild Landscape" />
-                        </div>
-                        <!--Second item-->
-                        <div class="">
-                            <img src="assets/imagenes/home/desk/05-LIMPIEZA-2.png" class="block w-full" alt="Camera" />
-                        </div>
-                        <!--Third item-->
-                        <div class="">
-                            <img src="assets/imagenes/home/desk/05-LIMPIEZA-3.png" class="block w-full"
-                                alt="Exotic Fruits" />
-                        </div>
-
-                        <div class="">
-                            <img src="assets/imagenes/home/desk/05-LIMPIEZA-4.png" class="block w-full"
-                                alt="Exotic Fruits" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="text-center">
-                    <button
-                        class="uppercase bg-white text-black font-titulo font-bold p-2 px-5 text-sm md:text-lg my-5">explora
-                        la línea de limpieza</button>
-                </div>
-            </div>
-
-            <div id="home-page-slot-7" class="py-5">
-                <div class="relative">
-                    <img class="md:hidden w-full" src="assets/imagenes/home/mobile/06-BANNER-ACCESORIOS.png" alt="">
-                    <img class="hidden md:block w-full" src="assets/imagenes/home/desk/06-BANNER-ACCESORIOS.png" alt="">
+                <div class="p-2 md:p-5 relative">
+                    <img class="md:hidden rounded-xl" src="assets/imagenes/home/mobile/BANNER-HOMBRE.png" alt="">
+                    <img class="hidden md:block rounded-xl" src="assets/imagenes/home/desk/BANNER-HOMBRE.png" alt="">
                     <p
-                        class="absolute uppercase text-xs md:text-4xl px-5 right-4 md:right-20 top-1/2 -translate-y-1/2 font-titulo text-black font-semibold md:tracking-[.5em]">
-                        Accesorios
+                        class="absolute uppercase text-xs lg:text-4xl px-5 top-1/2 left-[15%] -translate-y-1/2 font-titulo text-black font-semibold md:tracking-[.5em]">
+                        línea de hombre
                     </p>
                 </div>
-                <div class="hidden flex gap-2 p-5">
-                    <img class="w-full h-40 object-cover" src="assets/imagenes/home/mobile/07-ACCESORIOS-1.png" alt="">
-                    <img class="w-full h-40 object-cover" src="assets/imagenes/home/mobile/07-ACCESORIOS-2.png" alt="">
-                    <img class="w-full h-40 object-cover" src="assets/imagenes/home/mobile/07-ACCESORIOS-3.png" alt="">
-                    <img class="w-full h-40 object-cover" src="assets/imagenes/home/mobile/07-ACCESORIOS-4.png" alt="">
-                    <img class="w-full h-40 object-cover" src="assets/imagenes/home/mobile/07-ACCESORIOS-5.png" alt="">
-                    <img class="w-full h-40 object-cover" src="assets/imagenes/home/mobile/07-ACCESORIOS-6.png" alt="">
-                </div>
-                <div class="overflow-hidden w-full">
-                    <div id="carrusel" class="flex gap-5 p-5 transition-transform duration-700 ease-in-out">
-                        <img class="hidden md:block w-full h-90 object-cover"
-                            src="assets/imagenes/home/desk/07-ACCESORIOS-1.png" alt="">
-                        <img class="md:hidden w-full h-40 object-cover"
-                            src="assets/imagenes/home/mobile/07-ACCESORIOS-1.png" alt="">
-                        <img class="w-full hidden md:block h-90 object-cover"
-                            src="assets/imagenes/home/desk/07-ACCESORIOS-2.png" alt="">
-                        <img class="md:hidden w-full h-40 object-cover"
-                            src="assets/imagenes/home/mobile/07-ACCESORIOS-2.png" alt="">
-                        <img class="w-full hidden md:block h-90 object-cover"
-                            src="assets/imagenes/home/desk/07-ACCESORIOS-3.png" alt="">
-                        <img class="md:hidden w-full h-40 object-cover"
-                            src="assets/imagenes/home/mobile/07-ACCESORIOS-3.png" alt="">
-                        <img class="w-full hidden md:block h-90 object-cover"
-                            src="assets/imagenes/home/desk/07-ACCESORIOS-4.png" alt="">
-                        <img class="md:hidden w-full h-40 object-cover"
-                            src="assets/imagenes/home/mobile/07-ACCESORIOS-4.png" alt="">
-                        <img class="w-full hidden md:block h-90 object-cover"
-                            src="assets/imagenes/home/desk/07-ACCESORIOS-5.png" alt="">
-                        <img class="md:hidden w-full h-40 object-cover"
-                            src="assets/imagenes/home/mobile/07-ACCESORIOS-5.png" alt="">
-                        <img class="w-full hidden md:block h-90 object-cover"
-                            src="assets/imagenes/home/desk/07-ACCESORIOS-6.png" alt="">
-                        <img class="md:hidden w-full h-40 object-cover"
-                            src="assets/imagenes/home/mobile/07-ACCESORIOS-6.png" alt="">
-                    </div>
-                </div>
 
-                <div class="text-center bg-black">
-                    <button
-                        class="uppercase bg-white text-black font-titulo font-bold p-2 px-5 text-sm md:text-lg my-5">
-                        ver todo en accesorios</button>
+                <div class="p-2 md:p-5 relative">
+                    <img class="md:hidden rounded-xl" src="assets/imagenes/home/mobile/BANNER-MUJER.png" alt="">
+                    <img class="hidden md:block rounded-xl" src="assets/imagenes/home/desk/BANNER-MUJER.png" alt="">
+                    <p
+                        class="absolute uppercase text-xs lg:text-4xl px-5 top-1/2 right-[10%] -translate-y-1/2 font-titulo text-black font-semibold md:tracking-[.5em]">
+                        línea de mujer
+                    </p>
                 </div>
             </div>
 
-            <div id="home-page-slot-7" class="">
+            <div class="bg-black">
+                <h2
+                    class="p-5 md:p-15 text-center text-xs md:text-lg lg:text-3xl text-white tracking-[.2em] md:tracking-[.5em] font-titulo font-semibold uppercase">
+                    lo mejor de nuestra línea de shoe care
+                </h2>
+            </div>
+
+            <div id="home-page-slot-7" class="w-full py-5 bg-black px-0 overflow-hidden select-none">
+
+                <!-- Contenedor / Riel del carrusel -->
+                <div id="carrusel-track" class="flex flex-nowrap gap-4 cursor-pointer px-5 md:px-10 lg:px-15">
+
+                    <!-- Card 1 -->
+                    <div class="flex-none w-full sm:w-[48%] lg:w-[32%] card">
+                        <img src="assets/imagenes/home/mobile/05-LIMPIEZA-3.png"
+                            alt="Removedor de manchas para tenis y bolsos" class="w-full object-cover" />
+                        <div class="bg-[#DEDDD9] text-center mt-1 p-4">
+                            <h3 class="text-lg font-titulo font-bold text-gray-900 sm:text-xl uppercase">
+                                Removedor de manchas
+                            </h3>
+                            <p class="text-gray-700 font-parrafos text-xs sm:text-sm mt-2 max-w-sm mx-auto">
+                                Limpia en seco tu tennis, ropa, bolsos y carteras favoritas en segundos. ¡Rápido, fácil
+                                y sin complicaciones!
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="flex-none w-full sm:w-[48%] lg:w-[32%] card">
+                        <img src="assets/imagenes/home/mobile/05-LIMPIEZA-4.png"
+                            alt="Removedor de manchas para tenis y bolsos" class="w-full object-cover" />
+                        <div class="bg-[#DEDDD9] text-center mt-1 p-4">
+                            <h3 class="text-lg font-titulo font-bold text-gray-900 sm:text-xl uppercase">
+                                Removedor de manchas
+                            </h3>
+                            <p class="text-gray-700 font-parrafos text-xs sm:text-sm mt-2 max-w-sm mx-auto">
+                                Limpia en seco tu tennis, ropa, bolsos y carteras favoritas en segundos. ¡Rápido, fácil
+                                y sin complicaciones!
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="home-page-slot-8" class="">
                 <div class="relative px-5 pb-5">
                     <img class="md:hidden w-full" src="assets/imagenes/home/mobile/08-IMAGEN-FONDO-QUOTES.png" alt="">
                     <img class="hidden md:block w-full" src="assets/imagenes/home/desk/08-IMAGEN-FONDO-QUOTES.png"
@@ -306,7 +278,7 @@
                 </div>
             </div>
 
-            <div id="home-page-slot-8" class="">
+            <div id="home-page-slot-9" class="">
                 <div class="grid gap-3 grid-cols-1 md:grid-cols-2 place-items-center">
                     <div class="flex flex-col items-center">
                         <p class="font-semibold font-titulo text-xs md:text-lg uppercase">de venta exclusiva
@@ -365,9 +337,6 @@
             </div>
         </footer>
     </div>
-
-    <!-- AOS init -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script src="assets/js/script.js"></script>
 </body>
