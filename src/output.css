@@ -405,6 +405,10 @@
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
+  .border-1 {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -412,9 +416,6 @@
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
-  }
-  .border-gray-800 {
-    border-color: var(--color-gray-800);
   }
   .border-white {
     border-color: var(--color-white);
