@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" class="overflow-x-hidden">
 
 <head>
     <meta charset="UTF-8">
@@ -10,63 +10,62 @@
     <title>ZTEK</title>
 </head>
 
-<body class="overflow-x-hidden">
-    <div class="grid min-h-screen grid-rows-[auto_1fr_auto] bg-white">
-        <header class="absolute z-50 w-full px-5 md:px-10 lg:px-15 pt-2 md:pt-5">
-            <img class="h-13 m-2 md:h-18 w-auto" src="assets/imagenes/logos/LOGO ZTEK.svg" alt="Logo" />
+<body class="bg-white text-black overflow-x-hidden w-full max-w-full">
+    <!-- Contenedor Wrapper principal con overflow-x-hidden para asegurar móviles -->
+    <div class="grid min-h-screen grid-rows-[auto_1fr_auto] bg-white w-full max-w-full overflow-x-hidden">
+
+        <header class="absolute z-50 w-full px-5 md:px-10 lg:px-16 pt-2 md:pt-5">
+            <img class="h-13 m-2 md:h-18 w-auto" src="assets/imagenes/logos/LOGO ZTEK.svg" alt="Logo ZTEK" />
         </header>
-        <main>
+
+        <main class="w-full max-w-full overflow-x-hidden">
+
             <div id="home-page-slot-1" class="relative">
                 <img class="hidden md:block w-full h-auto" src="assets/imagenes/home/desk/01-BANNER-PRINCIPAL.png"
-                    alt="">
-                <img class="md:hidden w-full h-auto" src="assets/imagenes/home/mobile/01-BANNER-PRINCIPAL.png" alt="">
+                    alt="Banner Principal Desktop">
+                <img class="md:hidden w-full h-auto" src="assets/imagenes/home/mobile/01-BANNER-PRINCIPAL.png"
+                    alt="Banner Principal Mobile">
             </div>
 
             <div id="home-page-slot-2" class="flex flex-col items-center">
                 <img class="hidden md:block w-full h-auto" src="assets/imagenes/home/desk/02-GIF-CINTILLO-DESK.gif"
-                    alt="">
-                <img class="md:hidden w-full h-auto" src="assets/imagenes/home/mobile/02-GIF-CINTILLO-MOB.gif" alt="">
+                    alt="Cintillo Desktop">
+                <img class="md:hidden w-full h-auto" src="assets/imagenes/home/mobile/02-GIF-CINTILLO-MOB.gif"
+                    alt="Cintillo Mobile">
             </div>
 
-            <div id="home-page-slot-3" class="py-2 bg-black text-white px-5 md:px-10 lg:px-15">
+            <div id="home-page-slot-3" class="py-2 bg-black text-white px-5 md:px-10 lg:px-16">
                 <div class="justify-items-center">
                     <h2 class="md:hidden text-xl py-3 text-center tracking-widest font-titulo font-semibold uppercase">
-                        tu
-                        ritmo,
-                        tu
-                        estilo
+                        tu ritmo, tu estilo
                     </h2>
                     <div class="grid grid-cols-3 grid-rows-1 md:gap-5 md:p-10">
-                        <div class="flex md:ml-15 px-2">
+                        <div class="flex md:ml-16 px-2">
                             <img class="object-contain w-full h-auto" src="assets/imagenes/logos/LOGO ZTEK.svg"
-                                alt="Logo" />
+                                alt="Logo ZTEK" />
                         </div>
-                        <div class="tracking-widest text-[.7rem] md:text-base md:ml-15 col-span-2">
+                        <div class="tracking-widest text-[.7rem] md:text-base md:ml-16 col-span-2">
                             <h2
                                 class="hidden py-3 md:block text-3xl tracking-[.3em] font-titulo font-semibold uppercase">
-                                tu
-                                ritmo,
-                                tu
-                                estilo
+                                tu ritmo, tu estilo
                             </h2>
                             <p class="font-parrafos py-5 md:py-0 pl-8 md:pl-0 md:pr-8 text-xs md:text-lg lg:text-xl">
                                 Creada por y para apasionados del deporte.
-                                Ztek te ofrece el equilibrio perfecto entre rendimiento
-                                técnico y estilo urbano.
+                                Ztek te ofrece el equilibrio perfecto entre rendimiento técnico y estilo urbano.
                                 Desde tu entrenamiento más exigente hasta tu rutina diaria.
                                 <span class="md:hidden">Vístete con libertad, comodidad y diseño.</span>
                                 <span class="hidden md:block mt-2">Vístete con libertad, comodidad y diseño.</span>
                             </p>
                         </div>
                     </div>
-                    <hr class="w-full">
+                    <hr class="w-full border-gray-800">
                     <div class="flex gap-5 md:gap-20 w-full py-5 md:py-8 md:px-20 md:m-5">
                         <button
                             class="flex-1 bg-white text-black text-center font-bold text-xs md:text-base lg:text-xl uppercase py-1 md:py-3 hover:bg-black hover:text-white border-2 border-white transition-colors duration-300">accesorios</button>
                         <button
                             class="flex-1 bg-white text-black text-center font-bold text-xs md:text-base lg:text-xl uppercase py-1 md:py-3 hover:bg-black hover:text-white border-2 border-white transition-colors duration-300">ropa</button>
                         <button
-                            class="flex-1 bg-white text-black text-center font-bold text-xs md:text-base lg:text-xl uppercase py-1 md:py-3 hover:bg-black hover:text-white border-2 border-white transition-colors duration-300">shore
+                            class="flex-1 bg-white text-black text-center font-bold text-xs md:text-base lg:text-xl uppercase py-1 md:py-3 hover:bg-black hover:text-white border-2 border-white transition-colors duration-300">shoe
                             care</button>
                     </div>
                 </div>
@@ -74,54 +73,57 @@
 
             <div>
                 <h2
-                    class="p-5 md:p-15 text-center text-xs md:text-lg lg:text-3xl text-black tracking-[.2em] md:tracking-[.5em] font-titulo font-semibold uppercase">
+                    class="p-5 md:p-16 text-center text-xs md:text-lg lg:text-3xl text-black tracking-[.2em] md:tracking-[.5em] font-titulo font-semibold uppercase">
                     la tecnología de nuestras prendas
                 </h2>
             </div>
 
             <div id="home-page-slot-4"
-                class="w-full bg-[#EFEFF1] md:bg-[url('https://didieragt.github.io/LandingPage-Ztek/03-IMAGEN-FONDO-TECH.png')] md:bg-center md:bg-contain md:bg-no-repeat px-5 md:px-10 lg:px-15 py-10">
+                class="w-full bg-[#EFEFF1] md:bg-[url('https://didieragt.github.io/LandingPage-Ztek/03-IMAGEN-FONDO-TECH.png')] md:bg-center md:bg-contain md:bg-no-repeat px-5 md:px-10 lg:px-16 py-10">
                 <div class="grid grid-cols-3 grid-rows-2 md:grid-rows-3 gap-5">
                     <div class="place-self-stretch md:place-self-center">
-                        <img class="w-full md:h-50 p-2" src="assets/imagenes/home/desk/ICONO-1.png" alt="">
+                        <img class="w-full md:h-50 p-2" src="assets/imagenes/home/desk/ICONO-1.png"
+                            alt="Icono Soft Touch">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">Soft Touch</p>
                             <p class="text-xs md:text-base">Tejidos ligeros</p>
                         </div>
                     </div>
-                    <div class="hidden md:block row-span-3">
-
-                    </div>
+                    <div class="hidden md:block row-span-3"></div>
                     <div class="place-self-stretch md:place-self-center">
-                        <img class="w-full p-2 md:h-50" src="assets/imagenes/home/desk/ICONO-2.png" alt="">
+                        <img class="w-full p-2 md:h-50" src="assets/imagenes/home/desk/ICONO-2.png"
+                            alt="Icono Durabilidad">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">Durabilidad</p>
                             <p class="text-xs md:text-base">Tejidos duraderos</p>
                         </div>
                     </div>
                     <div class="place-self-stretch md:place-self-center">
-                        <img class="w-full p-2 md:h-50" src="assets/imagenes/home/desk/ICONO-6.png" alt="">
+                        <img class="w-full p-2 md:h-50" src="assets/imagenes/home/desk/ICONO-6.png"
+                            alt="Icono Elasticidad">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">Elasticidad</p>
                             <p class="text-xs md:text-base">Multidireccional</p>
                         </div>
                     </div>
                     <div class="place-self-stretch md:place-self-center">
-                        <img class="w-full p-2 md:h-50" src="assets/imagenes/home/desk/ICONO-5.png" alt="">
+                        <img class="w-full p-2 md:h-50" src="assets/imagenes/home/desk/ICONO-5.png"
+                            alt="Icono Multideporte">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">Multideporte</p>
                             <p class="text-xs md:text-base">Prendas versátiles</p>
                         </div>
                     </div>
                     <div class="place-self-stretch md:place-self-center">
-                        <img class="w-full p-2 md:h-50" src="assets/imagenes/home/desk/ICONO-4.png" alt="">
+                        <img class="w-full p-2 md:h-50" src="assets/imagenes/home/desk/ICONO-4.png"
+                            alt="Icono Quick Dry">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">Quick Dry</p>
                             <p class="text-xs md:text-base">Tejidos transpirables</p>
                         </div>
                     </div>
                     <div class="place-self-stretch md:place-self-center">
-                        <img class="w-full p-2 md:h-50" src="assets/imagenes/home/desk/ICONO-3.png" alt="">
+                        <img class="w-full p-2 md:h-50" src="assets/imagenes/home/desk/ICONO-3.png" alt="Icono All Day">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">All Day</p>
                             <p class="text-xs md:text-base">Multifuncionales</p>
@@ -132,57 +134,62 @@
 
             <div>
                 <h2
-                    class="p-5 md:p-15 text-center text-xs md:text-lg lg:text-3xl text-black tracking-[.2em] md:tracking-[.5em] font-titulo font-semibold uppercase">
+                    class="p-5 md:p-16 text-center text-xs md:text-lg lg:text-3xl text-black tracking-[.2em] md:tracking-[.5em] font-titulo font-semibold uppercase">
                     detalles premium, diseño que te mueve
                 </h2>
             </div>
 
             <div id="home-page-slot-5">
-                <div class="grid grid-cols-2 gap-2 px-5 md:px-10 lg:px-15 auto-rows-min">
-                    <div class="">
-                        <img class="w-3/4 h-auto" src="assets/imagenes/home/mobile/04-CARACTERÍSTICA-1-MOB.gif" alt="">
+                <div class="grid grid-cols-2 gap-2 px-5 md:px-10 lg:px-16 auto-rows-min">
+                    <div>
+                        <img class="w-3/4 h-auto" src="assets/imagenes/home/mobile/04-CARACTERÍSTICA-1-MOB.gif"
+                            alt="Detalles reflectivos">
                     </div>
                     <div class="flex items-center">
                         <p
                             class="uppercase text-left font-semibold text-xs md:text-lg lg:text-2xl px-4 tracking-[.3em] md:tracking-[.5em]">
-                            detalles
-                            <br>
-                            reflectivos
+                            detalles<br>reflectivos
                         </p>
                     </div>
                     <div class="flex items-center justify-end">
                         <p
                             class="uppercase text-right font-semibold text-xs md:text-lg lg:text-2xl px-4 tracking-[.2em] md:tracking-[.5em]">
-                            bolsillos y cierres <br>
-                            funcionales</p>
+                            bolsillos y cierres<br>funcionales
+                        </p>
                     </div>
                     <div class="flex items-center justify-end">
-                        <img class="w-3/4 h-auto" src="assets/imagenes/home/mobile/04-CARACTERÍSTICA-2-MOB.gif" alt="">
+                        <img class="w-3/4 h-auto" src="assets/imagenes/home/mobile/04-CARACTERÍSTICA-2-MOB.gif"
+                            alt="Cierres funcionales">
                     </div>
                     <div>
-                        <img class="w-3/4 h-auto" src="assets/imagenes/home/mobile/04-CARACTERÍSTICA-3-MOB.gif" alt="">
+                        <img class="w-3/4 h-auto" src="assets/imagenes/home/mobile/04-CARACTERÍSTICA-3-MOB.gif"
+                            alt="Slider grabado">
                     </div>
                     <div class="flex items-center">
                         <p
                             class="uppercase text-left font-semibold text-xs md:text-lg lg:text-2xl px-4 tracking-[.2em] md:tracking-[.5em]">
-                            slider con <br> grabado
+                            slider con<br>grabado
                         </p>
                     </div>
                     <div class="flex items-center justify-end">
                         <p
                             class="uppercase text-right font-semibold text-xs md:text-lg lg:text-2xl px-4 tracking-[.2em] md:tracking-[.5em]">
-                            punteras <br> contramarcadas</p>
+                            punteras<br>contramarcadas
+                        </p>
                     </div>
                     <div class="flex items-center justify-end pb-2">
-                        <img class="w-3/4 h-auto" src="assets/imagenes/home/mobile/04-CARACTERÍSTICA-4-MOB.png" alt="">
+                        <img class="w-3/4 h-auto" src="assets/imagenes/home/mobile/04-CARACTERÍSTICA-4-MOB.png"
+                            alt="Punteras contramarcadas">
                     </div>
                 </div>
             </div>
 
             <div id="home-page-slot-6" class="bg-black">
                 <div class="p-2 md:p-5 relative">
-                    <img class="md:hidden rounded-xl" src="assets/imagenes/home/mobile/BANNER-HOMBRE.png" alt="">
-                    <img class="hidden md:block rounded-xl" src="assets/imagenes/home/desk/BANNER-HOMBRE.png" alt="">
+                    <img class="md:hidden rounded-xl w-full" src="assets/imagenes/home/mobile/BANNER-HOMBRE.png"
+                        alt="Línea hombre mobile">
+                    <img class="hidden md:block rounded-xl w-full" src="assets/imagenes/home/desk/BANNER-HOMBRE.png"
+                        alt="Línea hombre desktop">
                     <p
                         class="absolute uppercase text-xs lg:text-4xl px-5 top-1/2 left-[15%] -translate-y-1/2 font-titulo text-black font-semibold md:tracking-[.5em]">
                         línea de hombre
@@ -190,8 +197,10 @@
                 </div>
 
                 <div class="p-2 md:p-5 relative">
-                    <img class="md:hidden rounded-xl" src="assets/imagenes/home/mobile/BANNER-MUJER.png" alt="">
-                    <img class="hidden md:block rounded-xl" src="assets/imagenes/home/desk/BANNER-MUJER.png" alt="">
+                    <img class="md:hidden rounded-xl w-full" src="assets/imagenes/home/mobile/BANNER-MUJER.png"
+                        alt="Línea mujer mobile">
+                    <img class="hidden md:block rounded-xl w-full" src="assets/imagenes/home/desk/BANNER-MUJER.png"
+                        alt="Línea mujer desktop">
                     <p
                         class="absolute uppercase text-xs lg:text-4xl px-5 top-1/2 right-[10%] -translate-y-1/2 font-titulo text-black font-semibold md:tracking-[.5em]">
                         línea de mujer
@@ -201,23 +210,23 @@
 
             <div class="bg-black">
                 <h2
-                    class="p-5 md:p-15 text-center text-xs md:text-lg lg:text-3xl text-white tracking-[.2em] md:tracking-[.5em] font-titulo font-semibold uppercase">
+                    class="p-5 md:p-16 text-center text-xs md:text-lg lg:text-3xl text-white tracking-[.2em] md:tracking-[.5em] font-titulo font-semibold uppercase">
                     lo mejor de nuestra línea de shoe care
                 </h2>
             </div>
 
-
+            <!-- SLOT 7: CARRUSEL CORREGIDO -->
             <div id="home-page-slot-7"
-                class="w-full py-5 px-5 md:px-10 lg:px-15 bg-black select-none overflow-hidden max-w-full">
+                class="w-full max-w-full py-5 px-5 md:px-10 lg:px-16 bg-black select-none overflow-hidden">
 
-                <!-- Contenedor / Riel del carrusel -->
-                <div id="carrusel-track" class="w-full flex gap-4 cursor-pointer overflow-x-hidden overflow-y-hidden">
+                <!-- Riel del carrusel con min-w-0 y overflow-x-hidden -->
+                <div id="carrusel-track"
+                    class="w-full min-w-0 flex gap-4 cursor-pointer overflow-x-hidden overflow-y-hidden">
 
                     <!-- Card 1 -->
-                    <div class="flex-none w-full sm:w-[48%] lg:w-[32%] p-3">
-                        <img src="assets/imagenes/home/mobile/05-LIMPIEZA-3.png"
-                            alt="Removedor de manchas para tenis y bolsos" class="w-full object-contain" />
-
+                    <div class="flex-none w-full sm:w-[48%] lg:w-[32%] p-1">
+                        <img src="assets/imagenes/home/mobile/05-LIMPIEZA-3.png" alt="Removedor de manchas"
+                            class="w-full object-contain" />
                         <div class="bg-[#DEDDD9] text-center mt-1 p-4">
                             <h3 class="text-lg md:text-xl lg:text-2xl font-titulo font-bold text-gray-900 uppercase">
                                 Removedor de manchas
@@ -230,9 +239,10 @@
                         </div>
                     </div>
 
-                    <div class="flex-none w-full sm:w-[48%] lg:w-[32%] p-3">
-                        <img src="assets/imagenes/home/mobile/05-LIMPIEZA-5.png"
-                            alt="Removedor de manchas para tenis y bolsos" class="w-full object-contain" />
+                    <!-- Card 2 -->
+                    <div class="flex-none w-full sm:w-[48%] lg:w-[32%] p-1">
+                        <img src="assets/imagenes/home/mobile/05-LIMPIEZA-5.png" alt="Shoe eraser"
+                            class="w-full object-contain" />
                         <div class="bg-[#DEDDD9] text-center mt-1 p-4">
                             <h3 class="text-lg md:text-xl lg:text-2xl font-titulo font-bold text-gray-900 uppercase">
                                 shoe eraser
@@ -245,9 +255,10 @@
                         </div>
                     </div>
 
-                    <div class="flex-none w-full sm:w-[48%] lg:w-[32%] p-3">
-                        <img src="assets/imagenes/home/mobile/05-LIMPIEZA-2.png"
-                            alt="Removedor de manchas para tenis y bolsos" class="w-full object-contain" />
+                    <!-- Card 3 -->
+                    <div class="flex-none w-full sm:w-[48%] lg:w-[32%] p-1">
+                        <img src="assets/imagenes/home/mobile/05-LIMPIEZA-2.png" alt="Limpiador"
+                            class="w-full object-contain" />
                         <div class="bg-[#DEDDD9] text-center mt-1 p-4">
                             <h3 class="text-lg md:text-xl lg:text-2xl font-titulo font-bold text-gray-900 uppercase">
                                 Limpiador
@@ -260,9 +271,10 @@
                         </div>
                     </div>
 
-                    <div class="flex-none w-full sm:w-[48%] lg:w-[32%] p-3">
-                        <img src="assets/imagenes/home/mobile/05-LIMPIEZA-6.png"
-                            alt="Removedor de manchas para tenis y bolsos" class="w-full object-contain" />
+                    <!-- Card 4 -->
+                    <div class="flex-none w-full sm:w-[48%] lg:w-[32%] p-1">
+                        <img src="assets/imagenes/home/mobile/05-LIMPIEZA-6.png" alt="Quick Wipes"
+                            class="w-full object-contain" />
                         <div class="bg-[#DEDDD9] text-center mt-1 p-4">
                             <h3 class="text-lg md:text-xl lg:text-2xl font-titulo font-bold text-gray-900 uppercase">
                                 Quick Wipes
@@ -275,9 +287,10 @@
                         </div>
                     </div>
 
-                    <div class="flex-none w-full sm:w-[48%] lg:w-[32%] p-3">
-                        <img src="assets/imagenes/home/mobile/05-LIMPIEZA-4.png"
-                            alt="Removedor de manchas para tenis y bolsos" class="w-full object-contain" />
+                    <!-- Card 5 -->
+                    <div class="flex-none w-full sm:w-[48%] lg:w-[32%] p-1">
+                        <img src="assets/imagenes/home/mobile/05-LIMPIEZA-4.png" alt="Protector"
+                            class="w-full object-contain" />
                         <div class="bg-[#DEDDD9] text-center mt-1 p-4">
                             <h3 class="text-lg md:text-xl lg:text-2xl font-titulo font-bold text-gray-900 uppercase">
                                 Protector
@@ -289,60 +302,72 @@
                             </p>
                         </div>
                     </div>
+
+                    <!-- Card 6 -->
+                    <div class="flex-none w-full sm:w-[48%] lg:w-[32%] p-1">
+                        <img src="assets/imagenes/home/mobile/05-LIMPIEZA-1.png" alt="Protector"
+                            class="w-full object-contain" />
+                        <div class="bg-[#DEDDD9] text-center mt-1 p-4">
+                            <h3 class="text-lg md:text-xl lg:text-2xl font-titulo font-bold text-gray-900 uppercase">
+                                Neutralizador
+                            </h3>
+                            <p
+                                class="text-gray-700 font-parrafos text-xs md:text-sm lg:text-base xl:text-lg mt-2 max-w-sm mx-auto">
+                                Dile adiós a los malos olores y dale a cualquier par de zapatillas la frescura natural y
+                                duradera del eucalipto.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <div id="home-page-slot-8" class="">
+            <div id="home-page-slot-8" class="overflow-hidden">
                 <div class="relative px-5 pb-5">
-                    <img class="md:hidden w-full" src="assets/imagenes/home/mobile/08-IMAGEN-FONDO-QUOTES.png" alt="">
+                    <img class="md:hidden w-full" src="assets/imagenes/home/mobile/08-IMAGEN-FONDO-QUOTES.png"
+                        alt="Quotes background mobile">
                     <img class="hidden md:block w-full" src="assets/imagenes/home/desk/08-IMAGEN-FONDO-QUOTES.png"
-                        alt="">
-                    <div class="md:hidden absolute top-2 mr-15 ml-10 p-5 mt-2 bg-white/30 rounded-xl">
+                        alt="Quotes background desktop">
+
+                    <div class="md:hidden absolute top-2 right-10 left-10 p-5 mt-2 bg-white/30 rounded-xl">
                         <span class="absolute top-8 left-9 text-white text-6xl leading-none">"</span>
                         <br>
                         <p class="p-5 uppercase text-sm font-titulo text-white font-semibold md:tracking-[.5em]">
-                            Lorem
-                            ipsum
-                            dolor sit,
-                            amet
-                            consectetur
+                            Lorem ipsum dolor sit, amet consectetur
                         </p>
                     </div>
-                    <div class="absolute top-30 hidden md:grid grid-cols-3 gap-3">
+
+                    <div class="absolute top-30 hidden md:grid grid-cols-3 gap-3 w-full">
                         <div></div>
                         <div></div>
                         <div class="bg-white/30 p-5 mr-20 rounded-lg">
                             <span class="absolute text-white text-6xl leading-none">"</span>
                             <br>
                             <p class="p-5 uppercase text-sm font-titulo text-white font-semibold md:tracking-[.5em]">
-                                Lorem
-                                ipsum
-                                dolor sit,
-                                amet
-                                consectetur
+                                Lorem ipsum dolor sit, amet consectetur
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div id="home-page-slot-9" class="">
+            <div id="home-page-slot-9" class="w-full max-w-full overflow-hidden">
                 <div class="grid gap-3 grid-cols-1 md:grid-cols-2 place-items-center">
                     <div class="flex flex-col items-center">
-                        <p class="font-semibold font-titulo text-xs md:text-lg uppercase">de venta exclusiva
-                            en tiendas
-                            y en
+                        <p class="font-semibold font-titulo text-xs md:text-lg uppercase">
+                            de venta exclusiva en tiendas y en
                         </p>
-                        <img class="md:hidden w-50 p-2" src="assets/imagenes/home/mobile/LOGO-SPORTLINE.COM.png" alt="">
+                        <img class="md:hidden w-50 p-2" src="assets/imagenes/home/mobile/LOGO-SPORTLINE.COM.png"
+                            alt="Sportline Logo Mobile">
                         <img class="self-start hidden md:block w-80 p-2 md:p-0"
-                            src="assets/imagenes/home/desk/LOGO-SPORTLINE.COM.png" alt="">
+                            src="assets/imagenes/home/desk/LOGO-SPORTLINE.COM.png" alt="Sportline Logo Desk">
                         <button
                             class="hidden md:block self-start uppercase bg-black text-white font-titulo font-bold px-5 py-2 text-base md:text-lg my-5">
                             haz parte de la comunidad
                         </button>
                     </div>
                     <div class="flex flex-col items-center py-5">
-                        <img class="border-2 rounded-lg bg-white/30 w-80 h-80" src="" alt="">
+                        <img class="border-2 rounded-lg bg-white/30 w-80 h-80" src="" alt="Comunidad image placeholder">
                         <button
                             class="md:hidden uppercase bg-black text-white font-titulo font-bold px-5 py-2 text-base md:text-lg my-5">
                             haz parte de la comunidad
@@ -352,6 +377,7 @@
             </div>
 
         </main>
+
         <footer class="px-6 py-8 bg-black text-white">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="md:col-span-2 flex flex-col items-center justify-center gap-4">
@@ -361,8 +387,7 @@
                 </div>
 
                 <div class="text-center md:text-left">
-                    <h3 class="font-bold mb-4 uppercase text-xl tracking-widest text-white font-titulo">ZTEK
-                    </h3>
+                    <h3 class="font-bold mb-4 uppercase text-xl tracking-widest text-white font-titulo">ZTEK</h3>
                     <p>Item 1</p>
                     <p>Item 2</p>
                     <p>Item 3</p>
@@ -380,8 +405,7 @@
             </div>
 
             <div class="mt-6 pt-6 border-t border-white/40 text-center text-xs text-white font-parrafos">
-                &copy; 2026 ZTEK | Todos los derechos reservados | Razón social: Century Sports SAS | Número de
-                identificación tributaria (NIT): 900.158.685-9
+                &copy; 2026 ZTEK | Todos los derechos reservados | Razón social: Century Sports SAS | NIT: 900.158.685-9
             </div>
         </footer>
     </div>
