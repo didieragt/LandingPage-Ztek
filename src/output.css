@@ -288,6 +288,9 @@
   .h-15 {
     height: calc(var(--spacing) * 15);
   }
+  .h-40 {
+    height: calc(var(--spacing) * 40);
+  }
   .h-50 {
     height: calc(var(--spacing) * 50);
   }
@@ -297,6 +300,9 @@
   .h-auto {
     height: auto;
   }
+  .h-screen {
+    height: 100vh;
+  }
   .max-h-1 {
     max-height: calc(var(--spacing) * 1);
   }
@@ -305,6 +311,15 @@
   }
   .max-h-\[50\%\] {
     max-height: 50%;
+  }
+  .min-h-\[20\%\] {
+    min-height: 20%;
+  }
+  .min-h-\[30\%\] {
+    min-height: 30%;
+  }
+  .min-h-\[40\%\] {
+    min-height: 40%;
   }
   .min-h-\[50\%\] {
     min-height: 50%;
@@ -430,6 +445,9 @@
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
+  }
+  .place-self-center {
+    place-self: center;
   }
   .place-self-stretch {
     place-self: stretch;
