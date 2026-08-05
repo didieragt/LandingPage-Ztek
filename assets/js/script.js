@@ -3,9 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!carrusel) return;
 
     let intervalo = null;
-    let velocidad = 1; // 1 hacia la derecha, -1 hacia la izquierda
+    let velocidad = 1;
 
-    // Variables de control de arrastre
     let isDown = false;
     let startX = 0;
     let scrollLeftInitial = 0;
@@ -20,26 +19,21 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const start = () => {
-        stop(); // Limpia cualquier intervalo previo
-
+        stop();
         intervalo = setInterval(() => {
-            if (isDown) return; // Si el usuario arrastra, pausar auto-scroll
-
+            if (isDown) return;
             const maxScrollIzq = getMaxScroll();
             carrusel.scrollLeft += velocidad;
-
             if (Math.ceil(carrusel.scrollLeft) >= maxScrollIzq) {
-                velocidad = -1; // Invierte hacia la izquierda
+                velocidad = -1;
             } else if (carrusel.scrollLeft <= 0) {
-                velocidad = 1;  // Invierte hacia la derecha
+                velocidad = 1;
             }
         }, 15);
     };
 
-    // 1. DESACTIVAR ARRASTRE NATIVO DE IMÁGENES EN DESKTOP
     carrusel.addEventListener('dragstart', (e) => e.preventDefault());
 
-    // Helper para obtener posición X unificada (Mouse o Touch)
     const getPageX = (e) => {
         if (e.touches && e.touches.length > 0) {
             return e.touches[0].pageX;
@@ -49,13 +43,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const startDragging = (e) => {
         isDown = true;
-        stop(); // Detener auto-scroll inmediatamente
+        stop();
 
         startX = getPageX(e);
         scrollLeftInitial = carrusel.scrollLeft;
 
         carrusel.style.cursor = 'grabbing';
-        document.body.style.userSelect = 'none'; // Evita seleccionar texto al arrastrar
+        document.body.style.userSelect = 'none';
     };
 
     const stopDragging = () => {
@@ -64,33 +58,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
         carrusel.style.cursor = 'grab';
         document.body.style.removeProperty('user-select');
-        start(); // Reanudar auto-scroll
+        start();
     };
 
     const moveDragging = (e) => {
         if (!isDown) return;
 
-        // Evita comportamientos por defecto del navegador en desktop
         e.preventDefault();
 
         const x = getPageX(e);
-        const walk = (x - startX) * 1.5; // Ajusta este multiplicador según la sensibilidad deseada
+        const walk = (x - startX) * 1.5;
 
         carrusel.scrollLeft = scrollLeftInitial - walk;
     };
 
-    // --- EVENTOS MOUSE (DESKTOP) ---
     carrusel.addEventListener('mousedown', startDragging);
-    // Escuchamos mousemove y mouseup en 'window' para que no se corte el movimiento si el cursor sale del contenedor
     window.addEventListener('mouseup', stopDragging);
     window.addEventListener('mousemove', moveDragging);
 
-    // --- EVENTOS TOUCH (MÓVIL) ---
     carrusel.addEventListener('touchstart', startDragging, { passive: true });
     window.addEventListener('touchend', stopDragging);
     carrusel.addEventListener('touchmove', moveDragging, { passive: false });
 
-    // --- PAUSA EN HOVER (CUANDO NO SE ESTÁ ARRASTRANDO) ---
     carrusel.addEventListener('mouseenter', () => {
         if (!isDown) stop();
     });
@@ -99,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!isDown) start();
     });
 
-    // Iniciar estado inicial
     carrusel.style.cursor = 'grab';
     start();
 });

@@ -11,7 +11,7 @@
 </head>
 
 <body class="bg-white text-black overflow-x-hidden w-full max-w-full">
-    <!-- Contenedor Wrapper principal con overflow-x-hidden para asegurar móviles -->
+
     <div class="grid min-h-screen grid-rows-[auto_1fr_auto] bg-white w-full max-w-full overflow-x-hidden">
 
         <header class="absolute z-50 w-full px-5 md:px-10 lg:px-16 pt-2 md:pt-5">
@@ -49,7 +49,7 @@
                                 class="hidden py-3 md:block text-3xl tracking-[.3em] font-titulo font-semibold uppercase">
                                 tu ritmo, tu estilo
                             </h2>
-                            <p class="font-parrafos py-5 md:py-0 pl-8 md:pl-0 md:pr-8 text-xs md:text-lg lg:text-xl">
+                            <p class="font-titulo py-5 md:py-0 pl-8 md:pl-0 md:pr-8 text-xs md:text-lg lg:text-xl">
                                 Creada por y para apasionados del deporte.
                                 Ztek te ofrece el equilibrio perfecto entre rendimiento técnico y estilo urbano.
                                 Desde tu entrenamiento más exigente hasta tu rutina diaria.
@@ -86,7 +86,7 @@
                             alt="Icono Soft Touch">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">Soft Touch</p>
-                            <p class="text-xs md:text-base">Tejidos ligeros</p>
+                            <p class="text-xs font-titulo md:text-base">Tejidos ligeros</p>
                         </div>
                     </div>
                     <div class="hidden md:block row-span-3"></div>
@@ -95,7 +95,7 @@
                             alt="Icono Durabilidad">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">Durabilidad</p>
-                            <p class="text-xs md:text-base">Tejidos duraderos</p>
+                            <p class="text-xs font-titulo md:text-base">Tejidos duraderos</p>
                         </div>
                     </div>
                     <div class="place-self-stretch md:place-self-center">
@@ -103,7 +103,7 @@
                             alt="Icono Elasticidad">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">Elasticidad</p>
-                            <p class="text-xs md:text-base">Multidireccional</p>
+                            <p class="text-xs font-titulo md:text-base">Multidireccional</p>
                         </div>
                     </div>
                     <div class="place-self-stretch md:place-self-center">
@@ -111,7 +111,7 @@
                             alt="Icono Multideporte">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">Multideporte</p>
-                            <p class="text-xs md:text-base">Prendas versátiles</p>
+                            <p class="text-xs font-titulo md:text-base">Prendas versátiles</p>
                         </div>
                     </div>
                     <div class="place-self-stretch md:place-self-center">
@@ -119,14 +119,14 @@
                             alt="Icono Quick Dry">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">Quick Dry</p>
-                            <p class="text-xs md:text-base">Tejidos transpirables</p>
+                            <p class="text-xs font-titulo md:text-base">Tejidos transpirables</p>
                         </div>
                     </div>
                     <div class="place-self-stretch md:place-self-center">
                         <img class="w-full p-2 md:h-50" src="assets/imagenes/home/desk/ICONO-3.png" alt="Icono All Day">
                         <div class="text-center py-2">
                             <p class="uppercase font-bold font-titulo text-sm md:text-lg">All Day</p>
-                            <p class="text-xs md:text-base">Multifuncionales</p>
+                            <p class="text-xs font-titulo md:text-base">Multifuncionales</p>
                         </div>
                     </div>
                 </div>
@@ -224,15 +224,18 @@
                     class="w-full min-w-0 flex gap-4 cursor-pointer overflow-x-hidden overflow-y-hidden">
 
                     <!-- Card 1 -->
-                    <div class="flex-none w-full sm:w-[48%] lg:w-[32%] p-1">
+                    <div class="flex-none w-[80%] sm:w-[45%] lg:w-[30%] p-1">
                         <img src="assets/imagenes/home/mobile/05-LIMPIEZA-3.png" alt="Removedor de manchas"
-                            class="w-full object-contain" />
-                        <div class="bg-[#DEDDD9] text-center mt-1 p-4">
-                            <h3 class="text-lg md:text-xl lg:text-2xl font-titulo font-bold text-gray-900 uppercase">
+                            class="w-full object-contain md:hidden" />
+                        <img src="assets/imagenes/home/desk/05-LIMPIEZA-3.png" alt="Removedor de manchas"
+                            class="w-full object-contain hidden md:block" />
+                        <div class="bg-[#DEDDD9] text-center mt-1 p-4 rounded-b-2xl">
+                            <h3
+                                class="text-lg md:text-xl lg:text-3xl font-titulo font-bold text-gray-900 uppercase p-2 md:p-5">
                                 Removedor de manchas
                             </h3>
                             <p
-                                class="text-gray-700 font-parrafos text-xs md:text-sm lg:text-base xl:text-lg mt-2 max-w-sm mx-auto">
+                                class="text-gray-700 font-titulo text-sm md:text-sm lg:text-base xl:text-lg mt-2 max-w-sm mx-auto pb-5">
                                 Limpia en seco tu tennis, ropa, bolsos y carteras favoritas en segundos. ¡Rápido, fácil
                                 y sin complicaciones!
                             </p>
@@ -240,31 +243,38 @@
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="flex-none w-full sm:w-[48%] lg:w-[32%] p-1">
+                    <div class="flex-none w-[80%] sm:w-[45%] lg:w-[30%] p-1">
                         <img src="assets/imagenes/home/mobile/05-LIMPIEZA-5.png" alt="Shoe eraser"
-                            class="w-full object-contain" />
-                        <div class="bg-[#DEDDD9] text-center mt-1 p-4">
-                            <h3 class="text-lg md:text-xl lg:text-2xl font-titulo font-bold text-gray-900 uppercase">
+                            class="w-full object-contain md:hidden" />
+                        <img src="assets/imagenes/home/desk/05-LIMPIEZA-5.png" alt="Shoe eraser"
+                            class="w-full object-contain hidden md:block" />
+                        <div class="bg-[#DEDDD9] text-center mt-1 p-4 rounded-b-2xl">
+                            <h3
+                                class="text-lg md:text-xl lg:text-3xl font-titulo font-bold text-gray-900 uppercase p-2 md:p-5">
                                 shoe eraser
                             </h3>
                             <p
-                                class="text-gray-700 font-parrafos text-xs md:text-sm lg:text-base xl:text-lg mt-2 max-w-sm mx-auto">
+                                class="text-gray-700 font-titulo text-sm md:text-sm lg:text-base xl:text-lg mt-2 max-w-sm mx-auto pb-5">
                                 Devuélve la vida a tus zapatos de gamuza y nubuck. Una limpieza rápida, profunda y súper
                                 fácil de usar.
+                                <br class="md:hidden"><br class="md:hidden">
                             </p>
                         </div>
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="flex-none w-full sm:w-[48%] lg:w-[32%] p-1">
+                    <div class="flex-none w-[80%] sm:w-[45%] lg:w-[30%] p-1">
                         <img src="assets/imagenes/home/mobile/05-LIMPIEZA-2.png" alt="Limpiador"
-                            class="w-full object-contain" />
-                        <div class="bg-[#DEDDD9] text-center mt-1 p-4">
-                            <h3 class="text-lg md:text-xl lg:text-2xl font-titulo font-bold text-gray-900 uppercase">
+                            class="w-full object-contain md:hidden" />
+                        <img src="assets/imagenes/home/desk/05-LIMPIEZA-2.png" alt="Limpiador"
+                            class="w-full object-contain hidden md:block" />
+                        <div class="bg-[#DEDDD9] text-center mt-1 p-4 rounded-b-2xl">
+                            <h3
+                                class="text-lg md:text-xl lg:text-3xl font-titulo font-bold text-gray-900 uppercase p-2 md:p-5">
                                 Limpiador
                             </h3>
                             <p
-                                class="text-gray-700 font-parrafos text-xs md:text-sm lg:text-base xl:text-lg mt-2 max-w-sm mx-auto">
+                                class="text-gray-700 font-titulo text-sm md:text-sm lg:text-base xl:text-lg mt-2 max-w-sm mx-auto pb-5">
                                 Despídete de las manchas en tus tenis favoritos sin usar agua. Es totalmente seguro para
                                 cuero y gamuza.
                             </p>
@@ -272,15 +282,18 @@
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="flex-none w-full sm:w-[48%] lg:w-[32%] p-1">
+                    <div class="flex-none w-[80%] sm:w-[45%] lg:w-[30%] p-1">
                         <img src="assets/imagenes/home/mobile/05-LIMPIEZA-6.png" alt="Quick Wipes"
-                            class="w-full object-contain" />
-                        <div class="bg-[#DEDDD9] text-center mt-1 p-4">
-                            <h3 class="text-lg md:text-xl lg:text-2xl font-titulo font-bold text-gray-900 uppercase">
+                            class="w-full object-contain md:hidden" />
+                        <img src="assets/imagenes/home/desk/05-LIMPIEZA-6.png" alt="Quick Wipes"
+                            class="w-full object-contain hidden md:block" />
+                        <div class="bg-[#DEDDD9] text-center mt-1 p-4 rounded-b-2xl">
+                            <h3
+                                class="text-lg md:text-xl lg:text-3xl font-titulo font-bold text-gray-900 uppercase p-2 md:p-5">
                                 Quick Wipes
                             </h3>
                             <p
-                                class="text-gray-700 font-parrafos text-xs md:text-sm lg:text-base xl:text-lg mt-2 max-w-sm mx-auto">
+                                class="text-gray-700 font-titulo text-sm md:text-sm lg:text-base xl:text-lg mt-2 max-w-sm mx-auto pb-5">
                                 Tus aliadas perfectas para llevar a todos lados. Dale un retoque a tus zapatillas en
                                 cualquier momento del día.
                             </p>
@@ -288,15 +301,18 @@
                     </div>
 
                     <!-- Card 5 -->
-                    <div class="flex-none w-full sm:w-[48%] lg:w-[32%] p-1">
+                    <div class="flex-none w-[80%] sm:w-[45%] lg:w-[30%] p-1">
                         <img src="assets/imagenes/home/mobile/05-LIMPIEZA-4.png" alt="Protector"
-                            class="w-full object-contain" />
-                        <div class="bg-[#DEDDD9] text-center mt-1 p-4">
-                            <h3 class="text-lg md:text-xl lg:text-2xl font-titulo font-bold text-gray-900 uppercase">
+                            class="w-full object-contain md:hidden" />
+                        <img src="assets/imagenes/home/desk/05-LIMPIEZA-4.png" alt="Protector"
+                            class="w-full object-contain hidden md:block" />
+                        <div class="bg-[#DEDDD9] text-center mt-1 p-4 rounded-b-2xl">
+                            <h3
+                                class="text-lg md:text-xl lg:text-3xl font-titulo font-bold text-gray-900 uppercase p-2 md:p-5">
                                 Protector
                             </h3>
                             <p
-                                class="text-gray-700 font-parrafos text-xs md:text-sm lg:text-base xl:text-lg mt-2 max-w-sm mx-auto">
+                                class="text-gray-700 font-titulo text-sm md:text-sm lg:text-base xl:text-lg mt-2 max-w-sm mx-auto pb-5">
                                 Protege tus pares favoritos de la lluvia, charcos y derrames accidentales. ¡Manténlos
                                 siempre secos e impecables!
                             </p>
@@ -304,15 +320,18 @@
                     </div>
 
                     <!-- Card 6 -->
-                    <div class="flex-none w-full sm:w-[48%] lg:w-[32%] p-1">
+                    <div class="flex-none w-[80%] sm:w-[45%] lg:w-[30%] p-1">
                         <img src="assets/imagenes/home/mobile/05-LIMPIEZA-1.png" alt="Protector"
-                            class="w-full object-contain" />
-                        <div class="bg-[#DEDDD9] text-center mt-1 p-4">
-                            <h3 class="text-lg md:text-xl lg:text-2xl font-titulo font-bold text-gray-900 uppercase">
+                            class="w-full object-contain md:hidden" />
+                        <img src="assets/imagenes/home/desk/05-LIMPIEZA-1.png" alt="Protector"
+                            class="w-full object-contain hidden md:block" />
+                        <div class="bg-[#DEDDD9] text-center mt-1 p-4 rounded-b-2xl">
+                            <h3
+                                class="text-lg md:text-xl lg:text-3xl font-titulo font-bold text-gray-900 uppercase p-2 md:p-5">
                                 Neutralizador
                             </h3>
                             <p
-                                class="text-gray-700 font-parrafos text-xs md:text-sm lg:text-base xl:text-lg mt-2 max-w-sm mx-auto">
+                                class="text-gray-700 font-titulo text-sm md:text-sm lg:text-base xl:text-lg mt-2 max-w-sm mx-auto pb-5">
                                 Dile adiós a los malos olores y dale a cualquier par de zapatillas la frescura natural y
                                 duradera del eucalipto.
                             </p>
