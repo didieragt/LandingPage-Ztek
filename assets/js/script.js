@@ -188,3 +188,5 @@ function CarruselDos() {
     carruselDos.style.cursor = 'grab';
     start();
 }
+
+console.log("Prueba");
