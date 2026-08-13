@@ -1,3 +1,22 @@
+const formularioRegistraComunidad = document.querySelector('#formulario-registrar-comunidad')
+
+formularioRegistraComunidad.addEventListener('submit', (e) => {
+
+    e.preventDefault();
+
+    Swal.fire({
+        title: "¡Gracias!",
+        text: "Ya eres de la comunidad",
+        icon: "success",
+        customClass: {
+            popup: 'rounded-2xl bg-slate-900 text-white p-6 shadow-2xl border border-slate-800',
+            title: 'text-2xl font-bold font-titulo',
+            htmlContainer: 'font-titulo',
+            confirmButton: '!bg-black'
+        }
+    });
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     CarruselDos();
     const carrusel = document.getElementById('carrusel-track');

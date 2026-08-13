@@ -414,7 +414,7 @@
                 </div>
             </div>
 
-            <div class="overflow-hidden">
+            <div class="overflow-hidden bg-[#F8F8F8]">
                 <div class="relative px-5 md:px-10 lg:px-16 pb-5">
                     <img class="md:hidden w-full" src="assets/imagenes/home/mobile/08-IMAGEN-FONDO-QUOTES.png"
                         alt="Quotes background mobile">
@@ -443,14 +443,45 @@
                 </div>
             </div>
 
-            <div id="home-page-slot-9" class="w-full max-w-full overflow-hidden">
+            <div id="home-page-slot-9" class="w-full max-w-full overflow-hidden px-5 md:px-10 lg:px-16 bg-white">
+                <div>
+                    <h2
+                        class="p-5 md:p-12 text-center text-lg lg:text-3xl text-black tracking-[.2em] md:tracking-[.5em] font-titulo font-semibold uppercase">
+                        Haz parte de la comunidad
+                    </h2>
+                    <form action="" id="formulario-registrar-comunidad">
+                        <div class="md:flex md:gap-5 mb-15">
 
+                            <input type="text"
+                                class="w-full my-2 px-3 py-6 border border-black rounded-xl focus:outline-none focus:ring-2 text-base lg:text-xl focus:ring-black-500 font-titulo font-bold bg-[#F8F8F8]"
+                                placeholder="Nombre">
+                            <input type="mail"
+                                class="w-full my-2 px-3 py-6 border border-black rounded-xl focus:outline-none focus:ring-2 text-base lg:text-xl focus:ring-black-500 font-titulo font-bold bg-[#F8F8F8]"
+                                placeholder="Correo">
+
+                            <button type="submit"
+                                class="w-full my-2 py-6 font-titulo bg-black text-white text-center font-bold rounded-xl text-base lg:text-xl uppercase hover:bg-white hover:text-black border-2 border-black transition-colors duration-300">Únete
+                                a la comunidad</button>
+                        </div>
+                    </form>
+                </div>
             </div>
 
+            <div id="home-page-slot-10" class="w-full max-w-full overflow-hidden px-5 md:px-10 lg:px-16 bg-black">
+                <div>
+                    <h2
+                        class="p-5 md:p-12 text-center text-lg lg:text-3xl text-white tracking-[.2em] md:tracking-[.4em] font-titulo font-semibold uppercase">
+                        ¿Quieres más Información de nuestros productos?
+                    </h2>
+                    <form action="">
+
+                    </form>
+                </div>
+            </div>
         </main>
 
         <footer class="px-5 md:px-10 lg:px-16 py-8 bg-black text-white">
-            <div class="flex justify-between">
+            <div class="flex justify-between py-8">
                 <img src="assets/imagenes/logos/LOGO ZTEK.svg" alt="Logo ZTEK" class="h-15 md:h-20 w-auto">
                 <div class="text-right">
                     <h3 class="font-bold mb-4 uppercase text-sm md:text-xl tracking-widest text-white font-titulo">
@@ -469,6 +500,7 @@
     </div>
 
     <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
