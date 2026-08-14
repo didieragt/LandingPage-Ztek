@@ -1,4 +1,6 @@
 const formularioRegistraComunidad = document.querySelector('#formulario-registrar-comunidad')
+const formularioInfo = document.querySelector('#formulario-registrar-info')
+
 
 formularioRegistraComunidad.addEventListener('submit', (e) => {
 
@@ -15,6 +17,27 @@ formularioRegistraComunidad.addEventListener('submit', (e) => {
             confirmButton: '!bg-black'
         }
     });
+
+    e.target.reset();
+});
+
+formularioInfo.addEventListener('submit', (e) => {
+
+    e.preventDefault();
+
+    Swal.fire({
+        title: "¡Gracias!",
+        text: "Mensaje enviado",
+        icon: "success",
+        customClass: {
+            popup: 'rounded-2xl bg-slate-900 text-white p-6 shadow-2xl border border-slate-800',
+            title: 'text-2xl font-bold font-titulo',
+            htmlContainer: 'font-titulo',
+            confirmButton: '!bg-black'
+        }
+    });
+
+    e.target.reset();
 });
 
 document.addEventListener('DOMContentLoaded', () => {
