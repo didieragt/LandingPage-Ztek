@@ -230,3 +230,30 @@ function CarruselDos() {
     carruselDos.style.cursor = 'grab';
     start();
 }
+
+
+const frases = [
+    "Lo que más me atrapó de ztek es la libertad de movimiento.Las prendas son increíblemente ligeras y elásticas, pero a la vez se nota que el tejido es súper resistente. Me encanta que puedo hacer una rutina exigente en la mañana y seguir con mis actividades del día sintiéndome cómodo y con un look impecable. Es esa versatilidad la que hace que no quiera usar otra cosa.",
+    "A veces uno cree que los accesorios son un detalle secundario, pero los de ztek realmente marcaron un antes y un después en mis rutinas. Son el complemento perfecto para cada entrenamiento; se siente la calidad en cada detalle y te dan esa seguridad extra para exigirte más y llevar tu rendimiento al siguiente nivel.",
+    "Termino de entrenar y lo último que quiero es complicarme lavando mis tenis. Los productos de limpieza de ztek son la solución más práctica y efectiva que he probado: quitan la suciedad al instante sin maltratar el material. De verdad son lo mejor para mantener las zapatillas como nuevas después de cualquier entrenamiento.",
+];
+
+let indice = 0;
+const elementosTexto = document.querySelectorAll('.frase-dinamica');
+const TIEMPO_CAMBIO_MS = 4000; // Cambia cada 4 segundos
+
+setInterval(() => {
+    // Desvanecer el texto actual
+    elementosTexto.forEach(el => el.classList.add('opacity-0'));
+
+    setTimeout(() => {
+        // Avanzar al siguiente texto
+        indice = (indice + 1) % frases.length;
+
+        // Actualizar contenido y volver a mostrar
+        elementosTexto.forEach(el => {
+            el.textContent = frases[indice];
+            el.classList.remove('opacity-0');
+        });
+    }, 500); // Espera a que termine la animación de opacidad
+}, TIEMPO_CAMBIO_MS);
