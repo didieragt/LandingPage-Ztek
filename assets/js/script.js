@@ -240,7 +240,7 @@ const frases = [
 
 let indice = 0;
 const elementosTexto = document.querySelectorAll('.frase-dinamica');
-const TIEMPO_CAMBIO_MS = 4000; // Cambia cada 4 segundos
+const TIEMPO_CAMBIO_MS = 10000; // Cambia cada 4 segundos
 
 setInterval(() => {
     // Desvanecer el texto actual
